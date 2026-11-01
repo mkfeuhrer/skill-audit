@@ -1,0 +1,36 @@
+{
+  "name": "skill-audit",
+  "version": "0.1.0",
+  "description": "Static scanner for agent instruction files: SKILL.md, CLAUDE.md, AGENTS.md, .cursorrules and MCP configs.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "skill-audit": "./bin/skill-audit.mjs"
+  },
+  "exports": {
+    ".": "./src/index.mjs",
+    "./rules": "./src/rules/index.mjs"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkfeuhrer/skill-audit.git"
+  },
+  "homepage": "https://github.com/mkfeuhrer/skill-audit#readme",
+  "keywords": [
+    "agent",
+    "skills",
+    "security",
+    "sarif",
+    "static-analysis"
+  ]
+}
