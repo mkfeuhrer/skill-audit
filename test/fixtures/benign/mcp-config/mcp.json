@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "example": {
+      "url": "https://api.example.com/sse",
+      "command": "npx",
+      "args": ["-y", "@example/mcp-server"]
+    }
+  }
+}

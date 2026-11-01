@@ -9,10 +9,16 @@ const fixture = (name) => fileURLToPath(new URL(`./fixtures/${name}`, import.met
 const MALICIOUS = {
   'malicious/exfil-env-url': 'egress/env-interpolated-url',
   'malicious/curl-pipe-sh': 'exec/curl-pipe-sh',
+  'malicious/sudo-escalation': 'exec/sudo-escalation',
+  'malicious/persistence': 'exec/persistence',
   'malicious/credential-read': 'fs/credential-read',
+  'malicious/wide-write': 'fs/wide-write',
   'malicious/hidden-unicode': 'instr/hidden-unicode',
   'malicious/html-comment-override': 'instr/html-comment-instruction',
   'malicious/override-language': 'instr/override-language',
+  'malicious/self-modify': 'instr/self-modify',
+  'malicious/consent-bypass': 'instr/consent-bypass',
+  'malicious/unsafe-mcp': 'mcp/unsafe-config',
   'malicious/overbroad-permissions': 'perm/overbroad',
   'malicious/obfuscated-blob': 'meta/obfuscated-blob',
 }
@@ -24,6 +30,8 @@ const BENIGN = [
   'benign/script-skill',
   'benign/minimal',
   'benign/templated-url',
+  'benign/ops-skill',
+  'benign/mcp-config',
 ]
 
 for (const [dir, ruleId] of Object.entries(MALICIOUS)) {
