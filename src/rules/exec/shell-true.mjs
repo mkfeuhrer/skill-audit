@@ -6,6 +6,7 @@ export const rule = {
   shortDescription: 'Shell execution surface',
   help: 'These primitives run arbitrary commands. Justify each one in the skill body or remove it.',
   check(file) {
+    /** @type {[RegExp, string][]} */
     const patterns = [
       [/shell\s*:\s*true/, 'child process spawned with shell: true'],
       [/\bchild_process\b/, 'child_process imported'],
