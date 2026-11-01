@@ -77,7 +77,19 @@ test('kind detection covers skills, rules and mcp configs', () => {
   assert.equal(parseInstructionFile('body', '/tmp/x/CLAUDE.md').kind, 'claude')
   assert.equal(parseInstructionFile('body', '/tmp/x/AGENTS.md').kind, 'agents')
   assert.equal(parseInstructionFile('body', '/tmp/x/.cursorrules').kind, 'cursor-rules')
+  assert.equal(parseInstructionFile('body', '/tmp/x/.windsurfrules').kind, 'windsurf-rules')
+  assert.equal(parseInstructionFile('body', '/tmp/x/.clinerules').kind, 'cline-rules')
+  assert.equal(parseInstructionFile('body', '/tmp/x/.windsurf/rules/naming.md').kind, 'windsurf-rules')
+  assert.equal(parseInstructionFile('body', '/tmp/x/.clinerules/tests.md').kind, 'cline-rules')
+  assert.equal(parseInstructionFile('body', '/tmp/x/.github/copilot-instructions.md').kind, 'copilot')
+  assert.equal(parseInstructionFile('body', '/tmp/x/.cursor/rules/tests.mdc').kind, 'cursor-rules')
   assert.equal(parseInstructionFile('{"mcpServers":{}}', '/tmp/x/mcp.json').kind, 'mcp')
+})
+
+test('mcp configs are scanned as code, not prose', () => {
+  const file = parseInstructionFile('{"mcpServers":{}}', '/tmp/x/mcp.json')
+  assert.ok(file.segments.some((segment) => segment.kind === 'code'))
+  assert.ok(!file.segments.some((segment) => segment.kind === 'prose'))
 })
 
 test('isInstructionFile rejects unrelated files', () => {

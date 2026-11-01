@@ -9,10 +9,14 @@ const INSTRUCTION_NAMES = new Map([
   ['agents.md', 'agents'],
   ['gemini.md', 'agents'],
   ['.cursorrules', 'cursor-rules'],
+  ['.windsurfrules', 'windsurf-rules'],
+  ['.clinerules', 'cline-rules'],
   ['mcp.json', 'mcp'],
   ['.mcp.json', 'mcp'],
   ['claude_desktop_config.json', 'mcp'],
 ])
+
+const WALKABLE_HIDDEN_DIRS = new Set(['.cursor', '.github', '.windsurf', '.clinerules'])
 
 const SCRIPT_EXT = new Set(['.sh', '.bash', '.zsh', '.js', '.mjs', '.cjs', '.ts', '.py'])
 
@@ -136,7 +140,12 @@ export function parseInstructionFile(raw, filePath) {
   const kind = kindOf(filePath, clean)
   const fences = parseFences(clean, bodyStartOffset, bodyStartLine, lineIndex)
 
-  const segments = [{ kind: 'prose', lang: '', text: trimmedBody, offset: bodyStartOffset, startLine: bodyStartLine }]
+  const segments = []
+  if (kind === 'mcp') {
+    segments.push({ kind: 'code', lang: 'json', text: clean, offset: 0, startLine: 1 })
+  } else {
+    segments.push({ kind: 'prose', lang: '', text: trimmedBody, offset: bodyStartOffset, startLine: bodyStartLine })
+  }
   for (const fence of fences) {
     segments.push({ kind: 'code', lang: fence.lang, text: fence.content, offset: fence.offset, startLine: fence.startLine })
   }
@@ -173,7 +182,12 @@ export function parseScript(raw, filePath) {
 function kindOf(filePath, raw) {
   const lower = basename(filePath).toLowerCase()
   if (INSTRUCTION_NAMES.has(lower)) return INSTRUCTION_NAMES.get(lower)
-  if (lower.endsWith('.mdc') && filePath.split(sep).includes('.cursor')) return 'cursor-rules'
+  const parts = filePath.split(sep)
+  if (lower.endsWith('.mdc') && parts.includes('.cursor')) return 'cursor-rules'
+  if (lower === 'copilot-instructions.md' && parts.includes('.github')) return 'copilot'
+  if (lower.endsWith('.md') && parts.includes('.windsurf')) return 'windsurf-rules'
+  if (lower.endsWith('.md') && parts.includes('.clinerules')) return 'cline-rules'
+  if (lower.endsWith('.md') && parts.includes('.cursor')) return 'cursor-rules'
   if (lower.endsWith('.json') && raw.includes('"mcpServers"')) return 'mcp'
   return 'unknown'
 }
@@ -216,7 +230,7 @@ async function walk(dir, files, seen, includeScripts) {
     const full = join(dir, entry.name)
     if (entry.isDirectory()) {
       if (SKIP_DIRS.has(entry.name)) continue
-      if (entry.name.startsWith('.') && entry.name !== '.cursor') continue
+      if (entry.name.startsWith('.') && !WALKABLE_HIDDEN_DIRS.has(entry.name)) continue
       await walk(full, files, seen, includeScripts)
       continue
     }
