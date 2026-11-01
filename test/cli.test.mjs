@@ -39,6 +39,27 @@ test('--format sarif emits parseable SARIF', () => {
   assert.equal(sarif.version, '2.1.0')
 })
 
+test('--format json includes stable fingerprints', () => {
+  const result = run(fixture('malicious/credential-read'), '--format', 'json', '--fail-on', 'none')
+  const parsed = JSON.parse(result.stdout)
+  assert.match(parsed.findings[0].fingerprint, /^[0-9a-f]{40}$/)
+})
+
+test('--ignore-file suppresses findings from a working-directory file only', () => {
+  const args = ['--fail-on', 'error']
+  const suppressed = run(fixture('malicious/curl-pipe-sh'), ...args, '--ignore-file', fixture('ignore-file'))
+  assert.equal(suppressed.status, 0)
+  const unsuppressed = run(fixture('malicious/curl-pipe-sh'), ...args)
+  assert.equal(unsuppressed.status, 1)
+})
+
+test('inline allows are off by default and enabled by --inline-allows', () => {
+  const blocked = run(fixture('marked/inline-allow'), '--fail-on', 'error')
+  assert.equal(blocked.status, 1)
+  const allowed = run(fixture('marked/inline-allow'), '--fail-on', 'error', '--inline-allows')
+  assert.equal(allowed.status, 0)
+})
+
 test('unknown flags exit 2', () => {
   const result = run('--nope')
   assert.equal(result.status, 2)

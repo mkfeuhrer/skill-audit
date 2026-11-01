@@ -1,4 +1,3 @@
-import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
 import { rules } from '../rules/index.mjs'
 import { displayPath } from '../parse.mjs'
@@ -6,10 +5,6 @@ import { displayPath } from '../parse.mjs'
 const pkg = JSON.parse(readFileSync(new URL('../../package.json', import.meta.url), 'utf8'))
 
 const SARIF_LEVEL = { error: 'error', warning: 'warning', note: 'note' }
-
-function fingerprint(ruleId, file, message) {
-  return createHash('sha256').update(`${ruleId}:${file}:${message}`).digest('hex').slice(0, 40)
-}
 
 export function formatSarif({ findings, root }) {
   const used = new Set(findings.map((finding) => finding.ruleId))
@@ -37,7 +32,7 @@ export function formatSarif({ findings, root }) {
           },
         },
       ],
-      partialFingerprints: { 'skill-audit/v1': fingerprint(finding.ruleId, file, finding.message) },
+      partialFingerprints: { 'skill-audit/v1': finding.fingerprint },
     }
   })
 

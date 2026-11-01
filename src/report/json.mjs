@@ -8,6 +8,7 @@ export function formatJson({ findings, summary, root }) {
     file: displayPath(finding.path, root),
     line: finding.line,
     column: finding.column || 1,
+    fingerprint: finding.fingerprint,
   }))
   return `${JSON.stringify({ version: 1, summary, findings: results }, null, 2)}\n`
 }

@@ -1,0 +1,2 @@
+# suppressions for the skill-audit repo's own tests
+exec/curl-pipe-sh

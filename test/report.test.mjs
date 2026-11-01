@@ -10,6 +10,7 @@ const findings = [
     path: '/repo/skills/a/SKILL.md',
     line: 12,
     column: 3,
+    fingerprint: '1111111111111111111111111111111111111111',
   },
   {
     ruleId: 'perm/overbroad',
@@ -18,6 +19,7 @@ const findings = [
     path: '/repo/skills/a/SKILL.md',
     line: 4,
     column: 1,
+    fingerprint: '2222222222222222222222222222222222222222',
   },
 ]
 
@@ -46,6 +48,25 @@ test('json output is machine readable', () => {
   assert.equal(parsed.version, 1)
   assert.equal(parsed.summary.error, 1)
   assert.equal(parsed.findings[0].file, 'skills/a/SKILL.md')
+  assert.equal(parsed.findings[0].fingerprint, '1111111111111111111111111111111111111111')
+})
+
+test('markdown output renders a shareable report table', () => {
+  const output = format(findings, summarize(findings), { format: 'markdown', root: '/repo' })
+  assert.match(output, /# skill-audit report/)
+  assert.match(output, /\*\*2 finding\(s\): 1 error\(s\), 1 warning\(s\), 0 note\(s\)\*\*/)
+  assert.match(output, /\| skills\/a\/SKILL\.md \| 12 \| error \| fs\/credential-read \|/)
+})
+
+test('markdown output states clearly when there is nothing to report', () => {
+  const output = format([], summarize([]), { format: 'markdown', root: '/repo' })
+  assert.match(output, /_No findings\._/)
+})
+
+test('github output emits workflow annotations', () => {
+  const output = format(findings, summarize(findings), { format: 'github', root: '/repo' })
+  assert.match(output, /^::error file=skills\/a\/SKILL\.md,line=12,col=3::fs\/credential-read: /m)
+  assert.match(output, /^::warning file=skills\/a\/SKILL\.md,line=4,col=1::perm\/overbroad: /m)
 })
 
 test('sarif output follows 2.1.0', () => {

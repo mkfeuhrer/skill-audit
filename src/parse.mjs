@@ -20,6 +20,16 @@ const WALKABLE_HIDDEN_DIRS = new Set(['.cursor', '.github', '.windsurf', '.cline
 
 const SCRIPT_EXT = new Set(['.sh', '.bash', '.zsh', '.js', '.mjs', '.cjs', '.ts', '.py'])
 
+const ALLOW_MARK = 'skill-audit:allow'
+
+function allowedLinesOf(raw) {
+  const lines = new Set()
+  raw.split('\n').forEach((text, index) => {
+    if (text.includes(ALLOW_MARK)) lines.add(index + 1)
+  })
+  return lines
+}
+
 export function parseFrontmatter(raw) {
   if (!raw.startsWith('---')) return { data: {}, keyLines: new Map(), body: raw, bodyStartLine: 1 }
   const end = raw.indexOf('\n---', 3)
@@ -159,6 +169,7 @@ export function parseInstructionFile(raw, filePath) {
     fences,
     segments,
     comments: parseHtmlComments(clean, lineIndex),
+    allowedLines: allowedLinesOf(clean),
     lineAt: (offset) => lineAt(lineIndex, offset),
   }
 }
@@ -175,6 +186,7 @@ export function parseScript(raw, filePath) {
     fences: [],
     segments: [{ kind: 'script', lang: extname(filePath).slice(1), text: clean, offset: 0, startLine: 1 }],
     comments: [],
+    allowedLines: allowedLinesOf(clean),
     lineAt: (offset) => lineAt(lineIndex, offset),
   }
 }
