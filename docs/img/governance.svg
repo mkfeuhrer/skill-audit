@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="190" viewBox="0 0 860 190" role="img" aria-label="skill-audit governance workflow">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b949e"/>
+    </marker>
+  </defs>
+
+  <rect x="10" y="60" width="150" height="70" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <text x="85" y="88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#e6edf3">skill source</text>
+  <text x="85" y="108" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#8b949e">npx skills add / clone</text>
+
+  <line x1="160" y1="95" x2="215" y2="95" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="220" y="60" width="160" height="70" rx="10" fill="#0d1117" stroke="#3fb950"/>
+  <text x="300" y="88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#3fb950">skill-audit gate</text>
+  <text x="300" y="108" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#8b949e">npx skill-audit &lt;path&gt;</text>
+
+  <line x1="380" y1="95" x2="435" y2="95" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="440" y="15" width="180" height="62" rx="10" fill="#0d1117" stroke="#f85149"/>
+  <text x="530" y="40" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#f85149">exit 1 — blocked</text>
+  <text x="530" y="60" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#8b949e">findings + fingerprints</text>
+
+  <rect x="440" y="105" width="180" height="62" rx="10" fill="#0d1117" stroke="#3fb950"/>
+  <text x="530" y="130" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#3fb950">exit 0 — install</text>
+  <text x="530" y="150" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#8b949e">skill lands in the directory</text>
+
+  <line x1="435" y1="82" x2="440" y2="46" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="435" y1="108" x2="440" y2="136" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <line x1="625" y1="46" x2="680" y2="46" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="685" y="15" width="165" height="62" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <text x="767" y="40" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#e6edf3">report it</text>
+  <text x="767" y="60" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#8b949e">SARIF · markdown · issue</text>
+</svg>

@@ -1,0 +1,50 @@
+warning test/fixtures/malicious/consent-bypass/SKILL.md:8:1  instr/consent-bypass
+        Instructs the agent to act without user confirmation.
+warning test/fixtures/malicious/consent-bypass/SKILL.md:11:1  instr/consent-bypass
+        Instructs the agent to act without user confirmation.
+error   test/fixtures/malicious/credential-read/SKILL.md:9:1  fs/credential-read
+        Accesses a credential path or secret store.
+error   test/fixtures/malicious/credential-read/SKILL.md:10:1  fs/credential-read
+        Accesses a credential path or secret store.
+warning test/fixtures/malicious/curl-pipe-sh/SKILL.md:9:1  egress/undeclared-host
+        Sends data to undeclared host "installer.example.invalid".
+error   test/fixtures/malicious/curl-pipe-sh/SKILL.md:9:1  exec/curl-pipe-sh
+        Download piped directly into a shell interpreter.
+error   test/fixtures/malicious/exfil-env-url/SKILL.md:11:1  egress/env-interpolated-url
+        URL is assembled from environment-like value "COLLECTOR_HOST, API_KEY".
+warning test/fixtures/malicious/hidden-unicode/SKILL.md:8:1  instr/hidden-unicode
+        1 invisible or bidirectional character(s) on this line.
+warning test/fixtures/malicious/hidden-unicode/SKILL.md:9:1  instr/hidden-unicode
+        1 invisible or bidirectional character(s) on this line.
+warning test/fixtures/malicious/hidden-unicode/SKILL.md:11:1  instr/hidden-unicode
+        1 invisible or bidirectional character(s) on this line.
+warning test/fixtures/malicious/html-comment-override/SKILL.md:8:1  instr/html-comment-instruction
+        HTML comment contains an imperative instruction or URL.
+warning test/fixtures/malicious/html-comment-override/SKILL.md:8:1  instr/override-language
+        Text attempts to override or bypass earlier instructions.
+warning test/fixtures/malicious/obfuscated-blob/SKILL.md:9:1  meta/obfuscated-blob
+        Base64 blob of 400+ characters.
+warning test/fixtures/malicious/overbroad-permissions/SKILL.md:4:1  perm/overbroad
+        Grants Bash with no command restriction.
+warning test/fixtures/malicious/overbroad-permissions/SKILL.md:4:1  perm/overbroad
+        Grants unrestricted WebFetch.
+warning test/fixtures/malicious/override-language/SKILL.md:8:1  instr/override-language
+        Text attempts to override or bypass earlier instructions.
+warning test/fixtures/malicious/override-language/SKILL.md:10:1  instr/override-language
+        Text attempts to override or bypass earlier instructions.
+warning test/fixtures/malicious/override-language/SKILL.md:11:1  instr/override-language
+        Text attempts to override or bypass earlier instructions.
+error   test/fixtures/malicious/persistence/SKILL.md:11:1  exec/persistence
+        Installs or configures a persistence mechanism.
+error   test/fixtures/malicious/self-modify/SKILL.md:11:1  instr/self-modify
+        Modifies the skill installation itself (installs, updates, or removes skills).
+warning test/fixtures/malicious/sudo-escalation/SKILL.md:11:1  exec/sudo-escalation
+        Runs a command through sudo or doas.
+error   test/fixtures/malicious/unsafe-mcp/mcp.json:4:1  mcp/unsafe-config
+        MCP server URL uses plain http:// for a non-local host.
+error   test/fixtures/malicious/unsafe-mcp/mcp.json:6:1  mcp/unsafe-config
+        Possible secret literal in MCP server configuration.
+error   test/fixtures/malicious/wide-write/SKILL.md:11:1  fs/wide-write
+        Writes outside the project tree (shell config, SSH, or system paths).
+
+9 error(s), 15 warning(s), 0 note(s) across 14 file(s)

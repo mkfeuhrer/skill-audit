@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="360" viewBox="0 0 860 360" role="img" aria-label="skill-audit terminal demo">
+  <rect x="1" y="1" width="858" height="358" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <rect x="1" y="1" width="858" height="36" rx="12" fill="#161b22"/>
+  <rect x="1" y="25" width="858" height="12" fill="#161b22"/>
+  <circle cx="24" cy="19" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="19" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="19" r="6" fill="#28c840"/>
+  <text x="430" y="24" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#8b949e">skill-audit — ~/.claude/skills</text>
+
+  <text x="24" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">
+    <tspan fill="#e6edf3">$ </tspan><tspan fill="#79c0ff">npx skill-audit</tspan><tspan fill="#e6edf3"> ~/.claude/skills</tspan>
+  </text>
+
+  <text x="24" y="112" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#f85149">error</text>
+  <text x="90" y="112" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#e6edf3">alias-setup/SKILL.md:9:1</text>
+  <text x="300" y="112" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#f85149">fs/wide-write</text>
+  <text x="42" y="134" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#8b949e">Writes outside the project tree (shell config, SSH, or system paths).</text>
+
+  <text x="24" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#f85149">error</text>
+  <text x="90" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#e6edf3">pinned-fetch/SKILL.md:11:1</text>
+  <text x="300" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#f85149">exec/curl-pipe-sh</text>
+  <text x="42" y="190" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#8b949e">Download piped directly into a shell interpreter.</text>
+
+  <text x="24" y="224" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#d29922">warning</text>
+  <text x="102" y="224" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#e6edf3">deploy-helper/SKILL.md:8:1</text>
+  <text x="316" y="224" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#d29922">instr/consent-bypass</text>
+  <text x="42" y="246" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#8b949e">Instructs the agent to act without user confirmation.</text>
+
+  <text x="24" y="280" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#d29922">warning</text>
+  <text x="102" y="280" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#e6edf3">driver-setup/SKILL.md:12:1</text>
+  <text x="316" y="280" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#d29922">egress/undeclared-host</text>
+  <text x="42" y="302" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#8b949e">Sends data to undeclared host "metrics.driver-cdn.com".</text>
+
+  <text x="24" y="340" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#e6edf3">2 error(s), 2 warning(s), 0 note(s) across 4 file(s)</text>
+  <text x="770" y="340" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#3fb950">exit 1</text>
+</svg>
