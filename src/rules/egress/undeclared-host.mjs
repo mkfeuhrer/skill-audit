@@ -21,7 +21,7 @@ export const rule = {
       for (const url of urls) {
         if (!inRequest && !url.includes('?')) continue
         const host = (url.match(/^https?:\/\/([^/:?#]+)/) || [])[1]
-        if (!host || hostAllowed(host, allowed)) continue
+        if (!host || host.includes('${') || hostAllowed(host, allowed)) continue
         const key = `${row.line}:${host}`
         if (seen.has(key)) continue
         seen.add(key)
