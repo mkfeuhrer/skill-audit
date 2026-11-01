@@ -32,6 +32,7 @@ const BENIGN = [
   'benign/templated-url',
   'benign/ops-skill',
   'benign/mcp-config',
+  'benign/milestone-skill',
 ]
 
 for (const [dir, ruleId] of Object.entries(MALICIOUS)) {
@@ -57,6 +58,12 @@ test('benign skill with a scoped tool grant produces no permission finding', asy
   const files = await collectFiles([fixture('benign/scoped-tools')])
   const { findings } = auditFiles(files)
   assert.equal(findings.filter((finding) => finding.ruleId === 'perm/overbroad').length, 0)
+})
+
+test('benign milestone prose does not trip persona-hijack patterns', async () => {
+  const files = await collectFiles([fixture('benign/milestone-skill')])
+  const { findings } = auditFiles(files)
+  assert.equal(findings.filter((finding) => finding.ruleId === 'instr/override-language').length, 0)
 })
 
 test('sibling scripts are collected and scanned', async () => {

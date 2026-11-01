@@ -7,9 +7,12 @@ export const rule = {
   help: 'Skills should not touch SSH keys, cloud credentials, .env files or the keychain. Remove the read or gate it behind an explicit, reviewed exception.',
   check(file) {
     const patterns = [
-      /(?:~|\$HOME|\/Users\/[^/\s"']+)\/(?:\.ssh|\.aws|\.gnupg|\.config\/gcloud)\b/,
+      /(?:~|\$HOME|\/Users\/[^/\s"']+)\/(?:\.ssh|\.aws|\.gnupg|\.config\/gcloud|\.kube|\.docker)\b/,
       /\bid_rsa\b|\bid_ed25519\b/,
       /\b\.npmrc\b|\b\.netrc\b/,
+      /\.docker\/config\.json\b/,
+      /\.git-credentials\b/,
+      /\bcredential\.helper\b/,
       /\bsecurity\s+find-generic-password\b/,
       /(?:^|[\s"'(=])(?:\.\/)?\.env(?:\.\w+)?\b/,
     ]

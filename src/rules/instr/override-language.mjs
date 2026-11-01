@@ -9,6 +9,8 @@ export const rule = {
     const patterns = [
       /\b(?:ignore|disregard|forget)\b[^.\n]{0,40}\b(?:previous|prior|above|earlier|system)\b[^.\n]{0,30}\b(?:instruction|prompt|rule|message)s?\b/i,
       /\byou are no longer\b/i,
+      /\byou are now\s+(?:an?|the)\s+\w+/i,
+      /\bfrom now on\b[^.\n]{0,40}\byou (?:are|will|must|should)\b/i,
       /\bnew (?:system )?instructions?\s*:/i,
       /\b(?:do not|don't)\s+(?:tell|inform|mention|reveal)\b[^.\n]{0,40}\b(?:user|human|operator)\b/i,
     ]
