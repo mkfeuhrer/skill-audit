@@ -62,8 +62,26 @@ npx skill-audit .                                # audit this repo's agent files
 Non-zero exit = do not install (or remove). `examples/install-gate.sh` wraps
 the full clone → audit → install flow.
 
-**Block regressions in CI** — `skill-audit` on your repo's own agent files,
-SARIF into GitHub code scanning:
+**Block regressions in CI** — this repo ships a GitHub Action
+([`action.yml`](action.yml)) that runs the scan and uploads SARIF to code
+scanning:
+
+```yaml
+jobs:
+  skill-audit:
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mkfeuhrer/skill-audit@v1
+        with:
+          paths: .
+          fail-on: warning
+          version: 1.0.0   # pin for reproducible CI
+```
+
+Or inline, without the Action:
 
 ```yaml
 - uses: actions/setup-node@v4
@@ -72,6 +90,17 @@ SARIF into GitHub code scanning:
 - uses: github/codeql-action/upload-sarif@v3
   if: always()
   with: { sarif_file: skill-audit.sarif }
+```
+
+**Author-side: pre-commit hook** — [`pre-commit`](https://pre-commit.com)
+users get the gate at commit time via [`.pre-commit-hooks.yaml`](.pre-commit-hooks.yaml):
+
+```yaml
+repos:
+  - repo: https://github.com/mkfeuhrer/skill-audit
+    rev: v1.0.0
+    hooks:
+      - id: skill-audit
 ```
 
 **Report findings people can read** — `--format markdown` renders a

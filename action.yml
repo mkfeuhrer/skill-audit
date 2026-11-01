@@ -1,0 +1,39 @@
+name: 'skill-audit'
+description: 'Static security scan of agent instruction files — SKILL.md, CLAUDE.md, AGENTS.md, .cursorrules, .windsurfrules, MCP configs'
+branding:
+  icon: 'shield'
+  color: 'green'
+
+inputs:
+  paths:
+    description: 'Space-separated paths to audit'
+    required: false
+    default: '.'
+  fail-on:
+    description: 'Exit non-zero at this level: error, warning or none'
+    required: false
+    default: 'error'
+  version:
+    description: 'skill-audit version to run (pin for reproducible CI)'
+    required: false
+    default: 'latest'
+  upload-sarif:
+    description: 'Upload SARIF to GitHub code scanning (job needs security-events: write)'
+    required: false
+    default: 'true'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Run skill-audit
+      shell: bash
+      run: |
+        npx --yes "skill-audit@${{ inputs.version }}" ${{ inputs.paths }} \
+          --fail-on "${{ inputs.fail-on }}" \
+          --format sarif > skill-audit.sarif
+        node -e "const s=require('./skill-audit.sarif');const r=s.runs[0].results.length;console.log('skill-audit: '+r+' finding(s)');process.exit(0)"
+    - name: Upload SARIF
+      if: ${{ inputs.upload-sarif == 'true' }}
+      uses: github/codeql-action/upload-sarif@v3
+      with:
+        sarif_file: skill-audit.sarif

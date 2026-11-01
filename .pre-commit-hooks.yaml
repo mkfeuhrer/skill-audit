@@ -1,0 +1,7 @@
+- id: skill-audit
+  name: skill-audit
+  description: audit agent instruction files for security findings before they are committed
+  entry: skill-audit
+  language: node
+  pass_filenames: true
+  files: (^|/)(SKILL\.md|CLAUDE\.md|AGENTS\.md|GEMINI\.md|\.cursorrules|\.windsurfrules|\.clinerules|mcp\.json|\.mcp\.json|copilot-instructions\.md)$

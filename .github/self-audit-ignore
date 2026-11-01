@@ -1,0 +1,29 @@
+# Self-audit suppressions for the skill-audit repository itself.
+#
+# The test corpus is deliberately malicious: every fixture under
+# test/fixtures/malicious and test/fixtures/marked exists to trip a rule.
+# They are suppressed here, scoped per file, so the CI self-audit can run
+# over the whole repo and still catch anything that creeps into the live
+# agent files (AGENTS.md, CLAUDE.md, source scripts).
+#
+# No bare rule suppressions on purpose: a blanket entry here would also
+# silence a real finding in this repo's own instructions.
+
+egress/env-interpolated-url@test/fixtures/malicious/exfil-env-url/SKILL.md
+egress/undeclared-host@test/fixtures/malicious/curl-pipe-sh/SKILL.md
+egress/undeclared-host@test/fixtures/marked/inline-allow/SKILL.md
+exec/curl-pipe-sh@test/fixtures/malicious/curl-pipe-sh/SKILL.md
+exec/curl-pipe-sh@test/fixtures/marked/inline-allow/SKILL.md
+exec/persistence@test/fixtures/malicious/persistence/SKILL.md
+exec/sudo-escalation@test/fixtures/malicious/sudo-escalation/SKILL.md
+fs/credential-read@test/fixtures/malicious/credential-read/SKILL.md
+fs/wide-write@test/fixtures/malicious/wide-write/SKILL.md
+instr/consent-bypass@test/fixtures/malicious/consent-bypass/SKILL.md
+instr/hidden-unicode@test/fixtures/malicious/hidden-unicode/SKILL.md
+instr/html-comment-instruction@test/fixtures/malicious/html-comment-override/SKILL.md
+instr/override-language@test/fixtures/malicious/html-comment-override/SKILL.md
+instr/override-language@test/fixtures/malicious/override-language/SKILL.md
+instr/self-modify@test/fixtures/malicious/self-modify/SKILL.md
+mcp/unsafe-config@test/fixtures/malicious/unsafe-mcp/mcp.json
+meta/obfuscated-blob@test/fixtures/malicious/obfuscated-blob/SKILL.md
+perm/overbroad@test/fixtures/malicious/overbroad-permissions/SKILL.md
