@@ -1,0 +1,416 @@
+{
+  "version": 1,
+  "summary": {
+    "error": 2,
+    "warning": 43,
+    "note": 0,
+    "total": 45
+  },
+  "findings": [
+    {
+      "ruleId": "instr/consent-bypass",
+      "level": "warning",
+      "message": "Instructs the agent to act without user confirmation.",
+      "file": "ai-slop/SKILL.md",
+      "line": 31,
+      "column": 1,
+      "fingerprint": "658a30fa6c1feb2b04dec9074508d2887e4f6a59"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"api.openverse.org\".",
+      "file": "design-taste-frontend/scripts/assets.mjs",
+      "line": 329,
+      "column": 1,
+      "fingerprint": "c00f08b3241a6f5a2dc0a4c68ce763c0bd716d5f"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"commons.wikimedia.org\".",
+      "file": "design-taste-frontend/scripts/assets.mjs",
+      "line": 368,
+      "column": 1,
+      "fingerprint": "0e705c1d27730017458a4b8b507e3a9e4902bdae"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"api.artic.edu\".",
+      "file": "design-taste-frontend/scripts/assets.mjs",
+      "line": 422,
+      "column": 1,
+      "fingerprint": "cd4d4a436e3b9ee42704fe001287dfe5410d4a72"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"collectionapi.metmuseum.org\".",
+      "file": "design-taste-frontend/scripts/assets.mjs",
+      "line": 455,
+      "column": 1,
+      "fingerprint": "4fa958a36fec94a48d7fb799b30263cf0d2ce988"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"archive.org\".",
+      "file": "design-taste-frontend/scripts/assets.mjs",
+      "line": 516,
+      "column": 1,
+      "fingerprint": "4b438b5488a1506c76f81ca3b52a07b82b4c6939"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"images-api.nasa.gov\".",
+      "file": "design-taste-frontend/scripts/assets.mjs",
+      "line": 552,
+      "column": 1,
+      "fingerprint": "2c830853a9272144b24b1f7568dd9ef8c881e9ab"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"api.artic.edu\".",
+      "file": "design-taste-frontend/scripts/assets.mjs",
+      "line": 727,
+      "column": 1,
+      "fingerprint": "cd4d4a436e3b9ee42704fe001287dfe5410d4a72"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"images-api.nasa.gov\".",
+      "file": "design-taste-frontend/scripts/assets.mjs",
+      "line": 730,
+      "column": 1,
+      "fingerprint": "2c830853a9272144b24b1f7568dd9ef8c881e9ab"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 109,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 126,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 128,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 129,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 133,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 137,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 140,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 144,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 145,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 147,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 149,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 151,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 153,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 154,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 155,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 158,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 174,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 181,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/inspect.mjs",
+      "line": 248,
+      "column": 1,
+      "fingerprint": "7227df4f95f0985f282b5280a0b51c6dd6c047dc"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"fonts.googleapis.com\".",
+      "file": "design-taste-frontend/scripts/lib/app-draw.mjs",
+      "line": 131,
+      "column": 1,
+      "fingerprint": "c608f0a9b52ee960ff2aa38392f236e73ba4c2b9"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "child_process imported.",
+      "file": "design-taste-frontend/scripts/lib/cdp.mjs",
+      "line": 4,
+      "column": 1,
+      "fingerprint": "3ce088785d681058dab0b91d19601e6cde7498d3"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/lib/cdp.mjs",
+      "line": 204,
+      "column": 1,
+      "fingerprint": "0396550e083d53fa91401d74728427f6110352b9"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/scenes.mjs",
+      "line": 55,
+      "column": 1,
+      "fingerprint": "10ec0d17e92759a319b7f510f7f355f5cf34d850"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/scenes.mjs",
+      "line": 70,
+      "column": 1,
+      "fingerprint": "10ec0d17e92759a319b7f510f7f355f5cf34d850"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/scenes.mjs",
+      "line": 72,
+      "column": 1,
+      "fingerprint": "10ec0d17e92759a319b7f510f7f355f5cf34d850"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/scenes.mjs",
+      "line": 82,
+      "column": 1,
+      "fingerprint": "10ec0d17e92759a319b7f510f7f355f5cf34d850"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/scenes.mjs",
+      "line": 94,
+      "column": 1,
+      "fingerprint": "10ec0d17e92759a319b7f510f7f355f5cf34d850"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/scenes.mjs",
+      "line": 96,
+      "column": 1,
+      "fingerprint": "10ec0d17e92759a319b7f510f7f355f5cf34d850"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/scenes.mjs",
+      "line": 99,
+      "column": 1,
+      "fingerprint": "10ec0d17e92759a319b7f510f7f355f5cf34d850"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/scenes.mjs",
+      "line": 112,
+      "column": 1,
+      "fingerprint": "10ec0d17e92759a319b7f510f7f355f5cf34d850"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "eval() called.",
+      "file": "design-taste-frontend/scripts/scenes.mjs",
+      "line": 114,
+      "column": 1,
+      "fingerprint": "10ec0d17e92759a319b7f510f7f355f5cf34d850"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "find-skills/SKILL.md",
+      "line": 90,
+      "column": 1,
+      "fingerprint": "eacc19104a3b40cf8fe774cac3a317591e406e88"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "find-skills/SKILL.md",
+      "line": 100,
+      "column": 1,
+      "fingerprint": "eacc19104a3b40cf8fe774cac3a317591e406e88"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"example.com\".",
+      "file": "playwright-cli/SKILL.md",
+      "line": 255,
+      "column": 1,
+      "fingerprint": "a9fb092ab21520f327871a54705862aa047cc71f"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"example.com\".",
+      "file": "playwright-cli/SKILL.md",
+      "line": 259,
+      "column": 1,
+      "fingerprint": "a9fb092ab21520f327871a54705862aa047cc71f"
+    },
+    {
+      "ruleId": "instr/consent-bypass",
+      "level": "warning",
+      "message": "Instructs the agent to act without user confirmation.",
+      "file": "taste-skill/SKILL.md",
+      "line": 53,
+      "column": 1,
+      "fingerprint": "0d77aa15b817e4a9cb3dfdd5fd4e7f2052c1de98"
+    }
+  ]
+}

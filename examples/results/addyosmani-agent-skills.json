@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "summary": {
+    "error": 5,
+    "warning": 14,
+    "note": 0,
+    "total": 19
+  },
+  "findings": [
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "child_process imported.",
+      "file": "scripts/floor-guard-reference-test.js",
+      "line": 15,
+      "column": 1,
+      "fingerprint": "a217a11a1fb50fdf862c0efdcccca808de1b5543"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "child_process imported.",
+      "file": "scripts/quality-gate-test.js",
+      "line": 9,
+      "column": 1,
+      "fingerprint": "8116ea1ee39eab9df6232a4e174f51d765e60508"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "child_process imported.",
+      "file": "scripts/run-evals-test.js",
+      "line": 9,
+      "column": 1,
+      "fingerprint": "cdf2646eb8fcc75aee2b4816ec8fd17ac194fb7d"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "child_process imported.",
+      "file": "scripts/run-evals-test.js",
+      "line": 80,
+      "column": 1,
+      "fingerprint": "cdf2646eb8fcc75aee2b4816ec8fd17ac194fb7d"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "child_process imported.",
+      "file": "scripts/run-evals.js",
+      "line": 36,
+      "column": 1,
+      "fingerprint": "743a9cd7c2d5b3e57aeabb59510e42462b0c2d4a"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "child_process imported.",
+      "file": "scripts/staged-secret-scan-test.js",
+      "line": 19,
+      "column": 1,
+      "fingerprint": "6bd1e29549e7f24a16ee1f2ed411a24b60dd00a7"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "child_process imported.",
+      "file": "scripts/validate-artifact-paths-test.js",
+      "line": 9,
+      "column": 1,
+      "fingerprint": "1ccae9ce819bfa9f169ab099f7a9a1e0abe7a884"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "child_process imported.",
+      "file": "scripts/validate-commands-test.js",
+      "line": 9,
+      "column": 1,
+      "fingerprint": "65f7d2df1ed3af7d7b54d00e46ac04ededb5fff0"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "child_process imported.",
+      "file": "scripts/validate-reference-links-test.js",
+      "line": 9,
+      "column": 1,
+      "fingerprint": "6fb7bb84f08921d1ec4f1f5575d3791d05703a85"
+    },
+    {
+      "ruleId": "instr/override-language",
+      "level": "warning",
+      "message": "Text attempts to override or bypass earlier instructions.",
+      "file": "skills/browser-testing-with-devtools/SKILL.md",
+      "line": 77,
+      "column": 1,
+      "fingerprint": "8176fbe719afccf34e290ff17f09de3cc107451c"
+    },
+    {
+      "ruleId": "fs/credential-read",
+      "level": "error",
+      "message": "Accesses a credential path or secret store.",
+      "file": "skills/ci-cd-and-automation/SKILL.md",
+      "line": 277,
+      "column": 1,
+      "fingerprint": "26a32115f41aa989cc4ab700403f33866070c3f3"
+    },
+    {
+      "ruleId": "fs/credential-read",
+      "level": "error",
+      "message": "Accesses a credential path or secret store.",
+      "file": "skills/ci-cd-and-automation/SKILL.md",
+      "line": 278,
+      "column": 1,
+      "fingerprint": "26a32115f41aa989cc4ab700403f33866070c3f3"
+    },
+    {
+      "ruleId": "fs/credential-read",
+      "level": "error",
+      "message": "Accesses a credential path or secret store.",
+      "file": "skills/ci-cd-and-automation/SKILL.md",
+      "line": 279,
+      "column": 1,
+      "fingerprint": "26a32115f41aa989cc4ab700403f33866070c3f3"
+    },
+    {
+      "ruleId": "fs/credential-read",
+      "level": "error",
+      "message": "Accesses a credential path or secret store.",
+      "file": "skills/context-engineering/SKILL.md",
+      "line": 65,
+      "column": 1,
+      "fingerprint": "675bfbdd976d7037d0ea939a549cb10c1576da64"
+    },
+    {
+      "ruleId": "fs/credential-read",
+      "level": "error",
+      "message": "Accesses a credential path or secret store.",
+      "file": "skills/documentation-and-adrs/SKILL.md",
+      "line": 213,
+      "column": 1,
+      "fingerprint": "7e05e7362f6c924c68e56d5c8bd9133b7567b1a4"
+    },
+    {
+      "ruleId": "instr/consent-bypass",
+      "level": "warning",
+      "message": "Instructs the agent to act without user confirmation.",
+      "file": "skills/planning-and-task-breakdown/SKILL.md",
+      "line": 234,
+      "column": 1,
+      "fingerprint": "e1068bf18a2edc4abc1407fde63010632f9787de"
+    },
+    {
+      "ruleId": "instr/consent-bypass",
+      "level": "warning",
+      "message": "Instructs the agent to act without user confirmation.",
+      "file": "skills/security-and-hardening/SKILL.md",
+      "line": 198,
+      "column": 1,
+      "fingerprint": "c8e98d3930ac5a729fefc5f6888e733ab991d96e"
+    },
+    {
+      "ruleId": "instr/override-language",
+      "level": "warning",
+      "message": "Text attempts to override or bypass earlier instructions.",
+      "file": "skills/source-driven-development/SKILL.md",
+      "line": 110,
+      "column": 1,
+      "fingerprint": "47ed38482a9ad2af5572bbaefeb6e62c808cbef9"
+    },
+    {
+      "ruleId": "instr/consent-bypass",
+      "level": "warning",
+      "message": "Instructs the agent to act without user confirmation.",
+      "file": "skills/spec-driven-development/SKILL.md",
+      "line": 113,
+      "column": 1,
+      "fingerprint": "ae8d58c1f6f113168fba57fd0d42f5ed3f09fa53"
+    }
+  ]
+}

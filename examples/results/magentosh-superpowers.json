@@ -1,0 +1,3368 @@
+{
+  "version": 1,
+  "summary": {
+    "error": 366,
+    "warning": 7,
+    "note": 0,
+    "total": 373
+  },
+  "findings": [
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/agent/affirmations/SKILL.md",
+      "line": 75,
+      "column": 1,
+      "fingerprint": "614880ca6e2d36855b770aa8b9150f6281488d98"
+    },
+    {
+      "ruleId": "exec/persistence",
+      "level": "error",
+      "message": "Installs or configures a persistence mechanism.",
+      "file": "guides/content/ai-automation-workflows/SKILL.md",
+      "line": 189,
+      "column": 1,
+      "fingerprint": "0f304317815d16b1a615d73553f12a80e4e462eb"
+    },
+    {
+      "ruleId": "exec/persistence",
+      "level": "error",
+      "message": "Installs or configures a persistence mechanism.",
+      "file": "guides/content/ai-automation-workflows/SKILL.md",
+      "line": 190,
+      "column": 1,
+      "fingerprint": "0f304317815d16b1a615d73553f12a80e4e462eb"
+    },
+    {
+      "ruleId": "fs/wide-write",
+      "level": "error",
+      "message": "Writes outside the project tree (shell config, SSH, or system paths).",
+      "file": "guides/content/ai-automation-workflows/SKILL.md",
+      "line": 193,
+      "column": 1,
+      "fingerprint": "2f1f8d74eec2f4a835647d47e78fd8bb713e6644"
+    },
+    {
+      "ruleId": "fs/wide-write",
+      "level": "error",
+      "message": "Writes outside the project tree (shell config, SSH, or system paths).",
+      "file": "guides/content/ai-automation-workflows/SKILL.md",
+      "line": 196,
+      "column": 1,
+      "fingerprint": "2f1f8d74eec2f4a835647d47e78fd8bb713e6644"
+    },
+    {
+      "ruleId": "fs/wide-write",
+      "level": "error",
+      "message": "Writes outside the project tree (shell config, SSH, or system paths).",
+      "file": "guides/content/ai-automation-workflows/SKILL.md",
+      "line": 199,
+      "column": 1,
+      "fingerprint": "2f1f8d74eec2f4a835647d47e78fd8bb713e6644"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"your-webhook.com\".",
+      "file": "guides/content/ai-automation-workflows/SKILL.md",
+      "line": 276,
+      "column": 1,
+      "fingerprint": "3e8177093146f8a6d53ffe711bea2da0f1a36378"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-automation-workflows/SKILL.md",
+      "line": 395,
+      "column": 1,
+      "fingerprint": "fd173226482c8df8053d7ca5c9081aa01574ce07"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-automation-workflows/SKILL.md",
+      "line": 398,
+      "column": 1,
+      "fingerprint": "fd173226482c8df8053d7ca5c9081aa01574ce07"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-automation-workflows/SKILL.md",
+      "line": 401,
+      "column": 1,
+      "fingerprint": "fd173226482c8df8053d7ca5c9081aa01574ce07"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-automation-workflows/SKILL.md",
+      "line": 404,
+      "column": 1,
+      "fingerprint": "fd173226482c8df8053d7ca5c9081aa01574ce07"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-content-pipeline/SKILL.md",
+      "line": 235,
+      "column": 1,
+      "fingerprint": "421067236a3252cca18bc4057a67677781f1b89e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-content-pipeline/SKILL.md",
+      "line": 238,
+      "column": 1,
+      "fingerprint": "421067236a3252cca18bc4057a67677781f1b89e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-content-pipeline/SKILL.md",
+      "line": 241,
+      "column": 1,
+      "fingerprint": "421067236a3252cca18bc4057a67677781f1b89e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-content-pipeline/SKILL.md",
+      "line": 244,
+      "column": 1,
+      "fingerprint": "421067236a3252cca18bc4057a67677781f1b89e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-content-pipeline/SKILL.md",
+      "line": 247,
+      "column": 1,
+      "fingerprint": "421067236a3252cca18bc4057a67677781f1b89e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-podcast-creation/SKILL.md",
+      "line": 277,
+      "column": 1,
+      "fingerprint": "f540d292e80365a1bb51f2f7a0cacf5dae51da43"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-podcast-creation/SKILL.md",
+      "line": 280,
+      "column": 1,
+      "fingerprint": "f540d292e80365a1bb51f2f7a0cacf5dae51da43"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-podcast-creation/SKILL.md",
+      "line": 283,
+      "column": 1,
+      "fingerprint": "f540d292e80365a1bb51f2f7a0cacf5dae51da43"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-podcast-creation/SKILL.md",
+      "line": 286,
+      "column": 1,
+      "fingerprint": "f540d292e80365a1bb51f2f7a0cacf5dae51da43"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/ai-podcast-creation/SKILL.md",
+      "line": 289,
+      "column": 1,
+      "fingerprint": "f540d292e80365a1bb51f2f7a0cacf5dae51da43"
+    },
+    {
+      "ruleId": "perm/overbroad",
+      "level": "warning",
+      "message": "Grants Bash with no command restriction.",
+      "file": "guides/content/ai-podcast/SKILL.md",
+      "line": 4,
+      "column": 1,
+      "fingerprint": "f3a2c2ef48cd689d9cfe82f725c410ee0a3e47cf"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/content-repurposing/SKILL.md",
+      "line": 247,
+      "column": 1,
+      "fingerprint": "eea169918e26a1277c1462a8a696e88c6d3b34db"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/content-repurposing/SKILL.md",
+      "line": 248,
+      "column": 1,
+      "fingerprint": "eea169918e26a1277c1462a8a696e88c6d3b34db"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/content-repurposing/SKILL.md",
+      "line": 249,
+      "column": 1,
+      "fingerprint": "eea169918e26a1277c1462a8a696e88c6d3b34db"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/content/content-repurposing/SKILL.md",
+      "line": 250,
+      "column": 1,
+      "fingerprint": "eea169918e26a1277c1462a8a696e88c6d3b34db"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/app-store-screenshots/SKILL.md",
+      "line": 263,
+      "column": 1,
+      "fingerprint": "b0591c0b6df06580adc5e6d4f48234f3a2b4e889"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/app-store-screenshots/SKILL.md",
+      "line": 264,
+      "column": 1,
+      "fingerprint": "b0591c0b6df06580adc5e6d4f48234f3a2b4e889"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/app-store-screenshots/SKILL.md",
+      "line": 265,
+      "column": 1,
+      "fingerprint": "b0591c0b6df06580adc5e6d4f48234f3a2b4e889"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/app-store-screenshots/SKILL.md",
+      "line": 266,
+      "column": 1,
+      "fingerprint": "b0591c0b6df06580adc5e6d4f48234f3a2b4e889"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/book-cover-design/SKILL.md",
+      "line": 215,
+      "column": 1,
+      "fingerprint": "204ad69a67af4fa4120d8466798580c8d25a811b"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/book-cover-design/SKILL.md",
+      "line": 216,
+      "column": 1,
+      "fingerprint": "204ad69a67af4fa4120d8466798580c8d25a811b"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/book-cover-design/SKILL.md",
+      "line": 217,
+      "column": 1,
+      "fingerprint": "204ad69a67af4fa4120d8466798580c8d25a811b"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/character-design-sheet/SKILL.md",
+      "line": 275,
+      "column": 1,
+      "fingerprint": "00d70bccd2024d231bcb5dcad4d66dc02b836b9b"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/character-design-sheet/SKILL.md",
+      "line": 276,
+      "column": 1,
+      "fingerprint": "00d70bccd2024d231bcb5dcad4d66dc02b836b9b"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/character-design-sheet/SKILL.md",
+      "line": 277,
+      "column": 1,
+      "fingerprint": "00d70bccd2024d231bcb5dcad4d66dc02b836b9b"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/data-visualization/SKILL.md",
+      "line": 208,
+      "column": 1,
+      "fingerprint": "a94d369aba74e9e2dfa55e1df5336fbaa9e2d65f"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/data-visualization/SKILL.md",
+      "line": 209,
+      "column": 1,
+      "fingerprint": "a94d369aba74e9e2dfa55e1df5336fbaa9e2d65f"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/data-visualization/SKILL.md",
+      "line": 210,
+      "column": 1,
+      "fingerprint": "a94d369aba74e9e2dfa55e1df5336fbaa9e2d65f"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/email-design/SKILL.md",
+      "line": 238,
+      "column": 1,
+      "fingerprint": "14148a14416ba4569ef8ad652d8f18097ab9070c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/email-design/SKILL.md",
+      "line": 239,
+      "column": 1,
+      "fingerprint": "14148a14416ba4569ef8ad652d8f18097ab9070c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/email-design/SKILL.md",
+      "line": 240,
+      "column": 1,
+      "fingerprint": "14148a14416ba4569ef8ad652d8f18097ab9070c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/landing-page-design/SKILL.md",
+      "line": 241,
+      "column": 1,
+      "fingerprint": "00223a16ee597526cf8e8f890ebce8f59b70adba"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/landing-page-design/SKILL.md",
+      "line": 242,
+      "column": 1,
+      "fingerprint": "00223a16ee597526cf8e8f890ebce8f59b70adba"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/landing-page-design/SKILL.md",
+      "line": 243,
+      "column": 1,
+      "fingerprint": "00223a16ee597526cf8e8f890ebce8f59b70adba"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/logo-design-guide/SKILL.md",
+      "line": 186,
+      "column": 1,
+      "fingerprint": "b32f9e9d5dfe3a89eac80c8fe962777ccae3a254"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/logo-design-guide/SKILL.md",
+      "line": 187,
+      "column": 1,
+      "fingerprint": "b32f9e9d5dfe3a89eac80c8fe962777ccae3a254"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/og-image-design/SKILL.md",
+      "line": 215,
+      "column": 1,
+      "fingerprint": "6fb3a799f9bdc22f5db6a3449f2ccd4e27987d72"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/og-image-design/SKILL.md",
+      "line": 216,
+      "column": 1,
+      "fingerprint": "6fb3a799f9bdc22f5db6a3449f2ccd4e27987d72"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/og-image-design/SKILL.md",
+      "line": 217,
+      "column": 1,
+      "fingerprint": "6fb3a799f9bdc22f5db6a3449f2ccd4e27987d72"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/pitch-deck-visuals/SKILL.md",
+      "line": 209,
+      "column": 1,
+      "fingerprint": "ec384d38256c52ec34d0a14b38da645b04320b0e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/pitch-deck-visuals/SKILL.md",
+      "line": 210,
+      "column": 1,
+      "fingerprint": "ec384d38256c52ec34d0a14b38da645b04320b0e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/pitch-deck-visuals/SKILL.md",
+      "line": 211,
+      "column": 1,
+      "fingerprint": "ec384d38256c52ec34d0a14b38da645b04320b0e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/youtube-thumbnail-design/SKILL.md",
+      "line": 247,
+      "column": 1,
+      "fingerprint": "9d0b76401c5c1752d513a4242f6767ac8dd9bcf0"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/youtube-thumbnail-design/SKILL.md",
+      "line": 248,
+      "column": 1,
+      "fingerprint": "9d0b76401c5c1752d513a4242f6767ac8dd9bcf0"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/design/youtube-thumbnail-design/SKILL.md",
+      "line": 249,
+      "column": 1,
+      "fingerprint": "9d0b76401c5c1752d513a4242f6767ac8dd9bcf0"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/photo/ai-product-photography/SKILL.md",
+      "line": 254,
+      "column": 1,
+      "fingerprint": "4ea5f7fdc45256a79ca7b4b632ecaabdf2c668b0"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/photo/ai-product-photography/SKILL.md",
+      "line": 257,
+      "column": 1,
+      "fingerprint": "4ea5f7fdc45256a79ca7b4b632ecaabdf2c668b0"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/photo/ai-product-photography/SKILL.md",
+      "line": 260,
+      "column": 1,
+      "fingerprint": "4ea5f7fdc45256a79ca7b4b632ecaabdf2c668b0"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/photo/ai-product-photography/SKILL.md",
+      "line": 263,
+      "column": 1,
+      "fingerprint": "4ea5f7fdc45256a79ca7b4b632ecaabdf2c668b0"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/photo/ai-product-photography/SKILL.md",
+      "line": 266,
+      "column": 1,
+      "fingerprint": "4ea5f7fdc45256a79ca7b4b632ecaabdf2c668b0"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/photo/product-photography/SKILL.md",
+      "line": 287,
+      "column": 1,
+      "fingerprint": "32eff0c9d3c38dd677d1fec17dea238c64ede69b"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/photo/product-photography/SKILL.md",
+      "line": 288,
+      "column": 1,
+      "fingerprint": "32eff0c9d3c38dd677d1fec17dea238c64ede69b"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/photo/product-photography/SKILL.md",
+      "line": 289,
+      "column": 1,
+      "fingerprint": "32eff0c9d3c38dd677d1fec17dea238c64ede69b"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/product/competitor-teardown/SKILL.md",
+      "line": 310,
+      "column": 1,
+      "fingerprint": "d936dbead9dbf2cb78b89cea6af386f64ea3d7ed"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/product/competitor-teardown/SKILL.md",
+      "line": 311,
+      "column": 1,
+      "fingerprint": "d936dbead9dbf2cb78b89cea6af386f64ea3d7ed"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/product/customer-persona/SKILL.md",
+      "line": 252,
+      "column": 1,
+      "fingerprint": "94a3bd30a344c082878803c5860044ab86aa5a7e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/product/customer-persona/SKILL.md",
+      "line": 253,
+      "column": 1,
+      "fingerprint": "94a3bd30a344c082878803c5860044ab86aa5a7e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/product/customer-persona/SKILL.md",
+      "line": 254,
+      "column": 1,
+      "fingerprint": "94a3bd30a344c082878803c5860044ab86aa5a7e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/product/product-changelog/SKILL.md",
+      "line": 267,
+      "column": 1,
+      "fingerprint": "68296e89e872a7d225ae8d4ccaad522d2b47d5ad"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/product/product-changelog/SKILL.md",
+      "line": 268,
+      "column": 1,
+      "fingerprint": "68296e89e872a7d225ae8d4ccaad522d2b47d5ad"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/product/product-hunt-launch/SKILL.md",
+      "line": 256,
+      "column": 1,
+      "fingerprint": "8eb647e737c7ca5290df09ba23782146236abb21"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/product/product-hunt-launch/SKILL.md",
+      "line": 257,
+      "column": 1,
+      "fingerprint": "8eb647e737c7ca5290df09ba23782146236abb21"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/product/product-hunt-launch/SKILL.md",
+      "line": 258,
+      "column": 1,
+      "fingerprint": "8eb647e737c7ca5290df09ba23782146236abb21"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/prompting/prompt-engineering/SKILL.md",
+      "line": 330,
+      "column": 1,
+      "fingerprint": "0ec3bb234a78ec8872a6b68c994d6e5d2fa37220"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/prompting/prompt-engineering/SKILL.md",
+      "line": 333,
+      "column": 1,
+      "fingerprint": "0ec3bb234a78ec8872a6b68c994d6e5d2fa37220"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/prompting/prompt-engineering/SKILL.md",
+      "line": 336,
+      "column": 1,
+      "fingerprint": "0ec3bb234a78ec8872a6b68c994d6e5d2fa37220"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/prompting/prompt-engineering/SKILL.md",
+      "line": 339,
+      "column": 1,
+      "fingerprint": "0ec3bb234a78ec8872a6b68c994d6e5d2fa37220"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/prompting/video-prompting-guide/SKILL.md",
+      "line": 227,
+      "column": 1,
+      "fingerprint": "d79a194b07c8ffbc6dd453688427e86c719b68c7"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/prompting/video-prompting-guide/SKILL.md",
+      "line": 230,
+      "column": 1,
+      "fingerprint": "d79a194b07c8ffbc6dd453688427e86c719b68c7"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/prompting/video-prompting-guide/SKILL.md",
+      "line": 233,
+      "column": 1,
+      "fingerprint": "d79a194b07c8ffbc6dd453688427e86c719b68c7"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/prompting/video-prompting-guide/SKILL.md",
+      "line": 236,
+      "column": 1,
+      "fingerprint": "d79a194b07c8ffbc6dd453688427e86c719b68c7"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/prompting/video-prompting-guide/SKILL.md",
+      "line": 239,
+      "column": 1,
+      "fingerprint": "d79a194b07c8ffbc6dd453688427e86c719b68c7"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/ai-social-media-content/SKILL.md",
+      "line": 240,
+      "column": 1,
+      "fingerprint": "ae15e09564e73226b6c3ae261ae0af8c0765da30"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/ai-social-media-content/SKILL.md",
+      "line": 243,
+      "column": 1,
+      "fingerprint": "ae15e09564e73226b6c3ae261ae0af8c0765da30"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/ai-social-media-content/SKILL.md",
+      "line": 246,
+      "column": 1,
+      "fingerprint": "ae15e09564e73226b6c3ae261ae0af8c0765da30"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/ai-social-media-content/SKILL.md",
+      "line": 249,
+      "column": 1,
+      "fingerprint": "ae15e09564e73226b6c3ae261ae0af8c0765da30"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/ai-social-media-content/SKILL.md",
+      "line": 252,
+      "column": 1,
+      "fingerprint": "ae15e09564e73226b6c3ae261ae0af8c0765da30"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/linkedin-content/SKILL.md",
+      "line": 229,
+      "column": 1,
+      "fingerprint": "c002f14c624361ff2f3c95b0c182c8f14eec2706"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/linkedin-content/SKILL.md",
+      "line": 230,
+      "column": 1,
+      "fingerprint": "c002f14c624361ff2f3c95b0c182c8f14eec2706"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/linkedin-content/SKILL.md",
+      "line": 231,
+      "column": 1,
+      "fingerprint": "c002f14c624361ff2f3c95b0c182c8f14eec2706"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/social-media-carousel/SKILL.md",
+      "line": 213,
+      "column": 1,
+      "fingerprint": "28ca045e5841f465febdc7015bf1d307ff8d1bbc"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/social-media-carousel/SKILL.md",
+      "line": 214,
+      "column": 1,
+      "fingerprint": "28ca045e5841f465febdc7015bf1d307ff8d1bbc"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/social-media-carousel/SKILL.md",
+      "line": 215,
+      "column": 1,
+      "fingerprint": "28ca045e5841f465febdc7015bf1d307ff8d1bbc"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/twitter-thread-creation/SKILL.md",
+      "line": 259,
+      "column": 1,
+      "fingerprint": "e67259eebac848aa86d34c27fab07e2984db34be"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/twitter-thread-creation/SKILL.md",
+      "line": 260,
+      "column": 1,
+      "fingerprint": "e67259eebac848aa86d34c27fab07e2984db34be"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/social/twitter-thread-creation/SKILL.md",
+      "line": 261,
+      "column": 1,
+      "fingerprint": "e67259eebac848aa86d34c27fab07e2984db34be"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/ai-marketing-videos/SKILL.md",
+      "line": 281,
+      "column": 1,
+      "fingerprint": "bddbe2667cb9637ec034da637b07a830a4379a74"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/ai-marketing-videos/SKILL.md",
+      "line": 284,
+      "column": 1,
+      "fingerprint": "bddbe2667cb9637ec034da637b07a830a4379a74"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/ai-marketing-videos/SKILL.md",
+      "line": 287,
+      "column": 1,
+      "fingerprint": "bddbe2667cb9637ec034da637b07a830a4379a74"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/ai-marketing-videos/SKILL.md",
+      "line": 290,
+      "column": 1,
+      "fingerprint": "bddbe2667cb9637ec034da637b07a830a4379a74"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/ai-marketing-videos/SKILL.md",
+      "line": 293,
+      "column": 1,
+      "fingerprint": "bddbe2667cb9637ec034da637b07a830a4379a74"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/explainer-video-guide/SKILL.md",
+      "line": 230,
+      "column": 1,
+      "fingerprint": "ed2183aec787430358a3e06a69d6693d5bc8a1ab"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/explainer-video-guide/SKILL.md",
+      "line": 231,
+      "column": 1,
+      "fingerprint": "ed2183aec787430358a3e06a69d6693d5bc8a1ab"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/explainer-video-guide/SKILL.md",
+      "line": 232,
+      "column": 1,
+      "fingerprint": "ed2183aec787430358a3e06a69d6693d5bc8a1ab"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/explainer-video-guide/SKILL.md",
+      "line": 233,
+      "column": 1,
+      "fingerprint": "ed2183aec787430358a3e06a69d6693d5bc8a1ab"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/storyboard-creation/SKILL.md",
+      "line": 262,
+      "column": 1,
+      "fingerprint": "4a64f7e619064b568567ef1e4cb359968724b509"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/storyboard-creation/SKILL.md",
+      "line": 263,
+      "column": 1,
+      "fingerprint": "4a64f7e619064b568567ef1e4cb359968724b509"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/storyboard-creation/SKILL.md",
+      "line": 264,
+      "column": 1,
+      "fingerprint": "4a64f7e619064b568567ef1e4cb359968724b509"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/storyboard-creation/SKILL.md",
+      "line": 265,
+      "column": 1,
+      "fingerprint": "4a64f7e619064b568567ef1e4cb359968724b509"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/talking-head-production/SKILL.md",
+      "line": 286,
+      "column": 1,
+      "fingerprint": "e8ea0bea162de0e334547c1d2cd2eeb9a3f2a03a"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/talking-head-production/SKILL.md",
+      "line": 289,
+      "column": 1,
+      "fingerprint": "e8ea0bea162de0e334547c1d2cd2eeb9a3f2a03a"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/talking-head-production/SKILL.md",
+      "line": 292,
+      "column": 1,
+      "fingerprint": "e8ea0bea162de0e334547c1d2cd2eeb9a3f2a03a"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/talking-head-production/SKILL.md",
+      "line": 295,
+      "column": 1,
+      "fingerprint": "e8ea0bea162de0e334547c1d2cd2eeb9a3f2a03a"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/talking-head-production/SKILL.md",
+      "line": 298,
+      "column": 1,
+      "fingerprint": "e8ea0bea162de0e334547c1d2cd2eeb9a3f2a03a"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/video-ad-specs/SKILL.md",
+      "line": 253,
+      "column": 1,
+      "fingerprint": "d026f3362830f0d073e4ab7ede6df41f786f0670"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/video-ad-specs/SKILL.md",
+      "line": 254,
+      "column": 1,
+      "fingerprint": "d026f3362830f0d073e4ab7ede6df41f786f0670"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/video-ad-specs/SKILL.md",
+      "line": 255,
+      "column": 1,
+      "fingerprint": "d026f3362830f0d073e4ab7ede6df41f786f0670"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/video/video-ad-specs/SKILL.md",
+      "line": 256,
+      "column": 1,
+      "fingerprint": "d026f3362830f0d073e4ab7ede6df41f786f0670"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/writing/case-study-writing/SKILL.md",
+      "line": 234,
+      "column": 1,
+      "fingerprint": "12161d710a0c6c5e89031ac482a0e136f92de133"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/writing/case-study-writing/SKILL.md",
+      "line": 235,
+      "column": 1,
+      "fingerprint": "12161d710a0c6c5e89031ac482a0e136f92de133"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/writing/newsletter-curation/SKILL.md",
+      "line": 291,
+      "column": 1,
+      "fingerprint": "1614197f20c3392dd4b920e1a964e19b5d05dbdb"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/writing/newsletter-curation/SKILL.md",
+      "line": 292,
+      "column": 1,
+      "fingerprint": "1614197f20c3392dd4b920e1a964e19b5d05dbdb"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/writing/newsletter-curation/SKILL.md",
+      "line": 293,
+      "column": 1,
+      "fingerprint": "1614197f20c3392dd4b920e1a964e19b5d05dbdb"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/writing/press-release-writing/SKILL.md",
+      "line": 286,
+      "column": 1,
+      "fingerprint": "30d6dc24ed0895a46042609e7a681245c6cd73dc"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/writing/press-release-writing/SKILL.md",
+      "line": 287,
+      "column": 1,
+      "fingerprint": "30d6dc24ed0895a46042609e7a681245c6cd73dc"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/writing/seo-content-brief/SKILL.md",
+      "line": 277,
+      "column": 1,
+      "fingerprint": "1784fbc0d9b21c031c0edf801c7331348685f242"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/writing/seo-content-brief/SKILL.md",
+      "line": 278,
+      "column": 1,
+      "fingerprint": "1784fbc0d9b21c031c0edf801c7331348685f242"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/writing/seo-content-brief/SKILL.md",
+      "line": 279,
+      "column": 1,
+      "fingerprint": "1784fbc0d9b21c031c0edf801c7331348685f242"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/writing/technical-blog-writing/SKILL.md",
+      "line": 293,
+      "column": 1,
+      "fingerprint": "51a48fe5941f6dbfcbe853576eb4ea38e4264544"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/writing/technical-blog-writing/SKILL.md",
+      "line": 294,
+      "column": 1,
+      "fingerprint": "51a48fe5941f6dbfcbe853576eb4ea38e4264544"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "guides/writing/technical-blog-writing/SKILL.md",
+      "line": 295,
+      "column": 1,
+      "fingerprint": "51a48fe5941f6dbfcbe853576eb4ea38e4264544"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"cli.inference.sh\".",
+      "file": "sdk/building-apps/SKILL.md",
+      "line": 24,
+      "column": 1,
+      "fingerprint": "a4d8ce750b7ef46a4e18e36149c145989984c9e6"
+    },
+    {
+      "ruleId": "exec/curl-pipe-sh",
+      "level": "error",
+      "message": "Download piped directly into a shell interpreter.",
+      "file": "sdk/building-apps/SKILL.md",
+      "line": 24,
+      "column": 1,
+      "fingerprint": "f666611a5695d2639d55f168a87ce0475de779da"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "sdk/javascript-sdk/SKILL.md",
+      "line": 517,
+      "column": 1,
+      "fingerprint": "02c71acc63b0b91d45f383a4db163af4bb32e547"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "sdk/javascript-sdk/SKILL.md",
+      "line": 520,
+      "column": 1,
+      "fingerprint": "02c71acc63b0b91d45f383a4db163af4bb32e547"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "sdk/javascript-sdk/SKILL.md",
+      "line": 523,
+      "column": 1,
+      "fingerprint": "02c71acc63b0b91d45f383a4db163af4bb32e547"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "sdk/javascript-sdk/SKILL.md",
+      "line": 526,
+      "column": 1,
+      "fingerprint": "02c71acc63b0b91d45f383a4db163af4bb32e547"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "sdk/python-sdk/SKILL.md",
+      "line": 466,
+      "column": 1,
+      "fingerprint": "e60fbd02fc6e91f09fec9af3535c6ece2f7e1a31"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "sdk/python-sdk/SKILL.md",
+      "line": 469,
+      "column": 1,
+      "fingerprint": "e60fbd02fc6e91f09fec9af3535c6ece2f7e1a31"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "sdk/python-sdk/SKILL.md",
+      "line": 472,
+      "column": 1,
+      "fingerprint": "e60fbd02fc6e91f09fec9af3535c6ece2f7e1a31"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "sdk/python-sdk/SKILL.md",
+      "line": 475,
+      "column": 1,
+      "fingerprint": "e60fbd02fc6e91f09fec9af3535c6ece2f7e1a31"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"cli.inference.sh\".",
+      "file": "tools/agent-tools/SKILL.md",
+      "line": 18,
+      "column": 1,
+      "fingerprint": "01d23bd595290d3eec6f183c5c084bede148e5e7"
+    },
+    {
+      "ruleId": "exec/curl-pipe-sh",
+      "level": "error",
+      "message": "Download piped directly into a shell interpreter.",
+      "file": "tools/agent-tools/SKILL.md",
+      "line": 18,
+      "column": 1,
+      "fingerprint": "6553c5ecad67971a9c7353da5ce5ad05e9b9bfe5"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/agent-tools/SKILL.md",
+      "line": 105,
+      "column": 1,
+      "fingerprint": "8837e68a45a65f89da6dca8a58968e170b8263ba"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/agent-tools/SKILL.md",
+      "line": 108,
+      "column": 1,
+      "fingerprint": "8837e68a45a65f89da6dca8a58968e170b8263ba"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/agent-tools/SKILL.md",
+      "line": 111,
+      "column": 1,
+      "fingerprint": "8837e68a45a65f89da6dca8a58968e170b8263ba"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/agent-tools/SKILL.md",
+      "line": 114,
+      "column": 1,
+      "fingerprint": "8837e68a45a65f89da6dca8a58968e170b8263ba"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/agent-tools/SKILL.md",
+      "line": 117,
+      "column": 1,
+      "fingerprint": "8837e68a45a65f89da6dca8a58968e170b8263ba"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/agent-tools/SKILL.md",
+      "line": 120,
+      "column": 1,
+      "fingerprint": "8837e68a45a65f89da6dca8a58968e170b8263ba"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/agent-tools/SKILL.md",
+      "line": 123,
+      "column": 1,
+      "fingerprint": "8837e68a45a65f89da6dca8a58968e170b8263ba"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/agent-tools/SKILL.md",
+      "line": 124,
+      "column": 1,
+      "fingerprint": "8837e68a45a65f89da6dca8a58968e170b8263ba"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/agent-tools/SKILL.md",
+      "line": 127,
+      "column": 1,
+      "fingerprint": "8837e68a45a65f89da6dca8a58968e170b8263ba"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/agent-tools/SKILL.md",
+      "line": 128,
+      "column": 1,
+      "fingerprint": "8837e68a45a65f89da6dca8a58968e170b8263ba"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/ai-music-generation/SKILL.md",
+      "line": 112,
+      "column": 1,
+      "fingerprint": "887d014fbe3e75559291424d34c96944b0b42fc5"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/ai-music-generation/SKILL.md",
+      "line": 115,
+      "column": 1,
+      "fingerprint": "887d014fbe3e75559291424d34c96944b0b42fc5"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/ai-music-generation/SKILL.md",
+      "line": 118,
+      "column": 1,
+      "fingerprint": "887d014fbe3e75559291424d34c96944b0b42fc5"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/ai-music-generation/SKILL.md",
+      "line": 121,
+      "column": 1,
+      "fingerprint": "887d014fbe3e75559291424d34c96944b0b42fc5"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/ai-music-generation/SKILL.md",
+      "line": 124,
+      "column": 1,
+      "fingerprint": "887d014fbe3e75559291424d34c96944b0b42fc5"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/ai-music-generation/SKILL.md",
+      "line": 127,
+      "column": 1,
+      "fingerprint": "887d014fbe3e75559291424d34c96944b0b42fc5"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/ai-voice-cloning/SKILL.md",
+      "line": 303,
+      "column": 1,
+      "fingerprint": "7927dc3c637ee6feb2db25eb73b7cae7b707f960"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/ai-voice-cloning/SKILL.md",
+      "line": 306,
+      "column": 1,
+      "fingerprint": "7927dc3c637ee6feb2db25eb73b7cae7b707f960"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/ai-voice-cloning/SKILL.md",
+      "line": 309,
+      "column": 1,
+      "fingerprint": "7927dc3c637ee6feb2db25eb73b7cae7b707f960"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/ai-voice-cloning/SKILL.md",
+      "line": 312,
+      "column": 1,
+      "fingerprint": "7927dc3c637ee6feb2db25eb73b7cae7b707f960"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/ai-voice-cloning/SKILL.md",
+      "line": 315,
+      "column": 1,
+      "fingerprint": "7927dc3c637ee6feb2db25eb73b7cae7b707f960"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/ai-voice-cloning/SKILL.md",
+      "line": 318,
+      "column": 1,
+      "fingerprint": "7927dc3c637ee6feb2db25eb73b7cae7b707f960"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/ai-voice-cloning/SKILL.md",
+      "line": 321,
+      "column": 1,
+      "fingerprint": "7927dc3c637ee6feb2db25eb73b7cae7b707f960"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/dialogue-audio/SKILL.md",
+      "line": 220,
+      "column": 1,
+      "fingerprint": "d272e1499b9fec5605fef4ac1e93b2efb69254ad"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/dialogue-audio/SKILL.md",
+      "line": 222,
+      "column": 1,
+      "fingerprint": "d272e1499b9fec5605fef4ac1e93b2efb69254ad"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/dialogue-audio/SKILL.md",
+      "line": 223,
+      "column": 1,
+      "fingerprint": "d272e1499b9fec5605fef4ac1e93b2efb69254ad"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/dialogue-audio/SKILL.md",
+      "line": 224,
+      "column": 1,
+      "fingerprint": "d272e1499b9fec5605fef4ac1e93b2efb69254ad"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-dialogue/SKILL.md",
+      "line": 201,
+      "column": 1,
+      "fingerprint": "627f083063afc7a9134f2114525fa6c821905970"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-dialogue/SKILL.md",
+      "line": 204,
+      "column": 1,
+      "fingerprint": "627f083063afc7a9134f2114525fa6c821905970"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-dialogue/SKILL.md",
+      "line": 207,
+      "column": 1,
+      "fingerprint": "627f083063afc7a9134f2114525fa6c821905970"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-dialogue/SKILL.md",
+      "line": 210,
+      "column": 1,
+      "fingerprint": "627f083063afc7a9134f2114525fa6c821905970"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-dubbing/SKILL.md",
+      "line": 141,
+      "column": 1,
+      "fingerprint": "733cc1af54359c900437cadae9731c495e440d51"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-dubbing/SKILL.md",
+      "line": 144,
+      "column": 1,
+      "fingerprint": "733cc1af54359c900437cadae9731c495e440d51"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-dubbing/SKILL.md",
+      "line": 147,
+      "column": 1,
+      "fingerprint": "733cc1af54359c900437cadae9731c495e440d51"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-dubbing/SKILL.md",
+      "line": 150,
+      "column": 1,
+      "fingerprint": "733cc1af54359c900437cadae9731c495e440d51"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-music/SKILL.md",
+      "line": 181,
+      "column": 1,
+      "fingerprint": "7b408c74c463e2067c4c027bde0adef44e0fc706"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-music/SKILL.md",
+      "line": 184,
+      "column": 1,
+      "fingerprint": "7b408c74c463e2067c4c027bde0adef44e0fc706"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-music/SKILL.md",
+      "line": 187,
+      "column": 1,
+      "fingerprint": "7b408c74c463e2067c4c027bde0adef44e0fc706"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-music/SKILL.md",
+      "line": 190,
+      "column": 1,
+      "fingerprint": "7b408c74c463e2067c4c027bde0adef44e0fc706"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-sound-effects/SKILL.md",
+      "line": 182,
+      "column": 1,
+      "fingerprint": "7cea632b6966d653d6592945bfec99f0e1a9b14d"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-sound-effects/SKILL.md",
+      "line": 185,
+      "column": 1,
+      "fingerprint": "7cea632b6966d653d6592945bfec99f0e1a9b14d"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-sound-effects/SKILL.md",
+      "line": 188,
+      "column": 1,
+      "fingerprint": "7cea632b6966d653d6592945bfec99f0e1a9b14d"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-sound-effects/SKILL.md",
+      "line": 191,
+      "column": 1,
+      "fingerprint": "7cea632b6966d653d6592945bfec99f0e1a9b14d"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-stt/SKILL.md",
+      "line": 150,
+      "column": 1,
+      "fingerprint": "2366a6181d39d1d666e1eaf908e84b8152d27f90"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-stt/SKILL.md",
+      "line": 153,
+      "column": 1,
+      "fingerprint": "2366a6181d39d1d666e1eaf908e84b8152d27f90"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-stt/SKILL.md",
+      "line": 156,
+      "column": 1,
+      "fingerprint": "2366a6181d39d1d666e1eaf908e84b8152d27f90"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-stt/SKILL.md",
+      "line": 159,
+      "column": 1,
+      "fingerprint": "2366a6181d39d1d666e1eaf908e84b8152d27f90"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-tts/SKILL.md",
+      "line": 184,
+      "column": 1,
+      "fingerprint": "e555a3b102a54312b61f8ea9f53f9dc8ad25155e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-tts/SKILL.md",
+      "line": 187,
+      "column": 1,
+      "fingerprint": "e555a3b102a54312b61f8ea9f53f9dc8ad25155e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-tts/SKILL.md",
+      "line": 190,
+      "column": 1,
+      "fingerprint": "e555a3b102a54312b61f8ea9f53f9dc8ad25155e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-tts/SKILL.md",
+      "line": 193,
+      "column": 1,
+      "fingerprint": "e555a3b102a54312b61f8ea9f53f9dc8ad25155e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-tts/SKILL.md",
+      "line": 196,
+      "column": 1,
+      "fingerprint": "e555a3b102a54312b61f8ea9f53f9dc8ad25155e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-voice-changer/SKILL.md",
+      "line": 140,
+      "column": 1,
+      "fingerprint": "d11bda81554d63dcd1c89b0cbb6c8537bbdbfbdd"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-voice-changer/SKILL.md",
+      "line": 143,
+      "column": 1,
+      "fingerprint": "d11bda81554d63dcd1c89b0cbb6c8537bbdbfbdd"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-voice-changer/SKILL.md",
+      "line": 146,
+      "column": 1,
+      "fingerprint": "d11bda81554d63dcd1c89b0cbb6c8537bbdbfbdd"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-voice-changer/SKILL.md",
+      "line": 149,
+      "column": 1,
+      "fingerprint": "d11bda81554d63dcd1c89b0cbb6c8537bbdbfbdd"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-voice-isolator/SKILL.md",
+      "line": 128,
+      "column": 1,
+      "fingerprint": "4c6c940ae2c56a26e14b97ab203a33a1109b2b44"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-voice-isolator/SKILL.md",
+      "line": 131,
+      "column": 1,
+      "fingerprint": "4c6c940ae2c56a26e14b97ab203a33a1109b2b44"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-voice-isolator/SKILL.md",
+      "line": 134,
+      "column": 1,
+      "fingerprint": "4c6c940ae2c56a26e14b97ab203a33a1109b2b44"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/elevenlabs-voice-isolator/SKILL.md",
+      "line": 137,
+      "column": 1,
+      "fingerprint": "4c6c940ae2c56a26e14b97ab203a33a1109b2b44"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/speech-to-text/SKILL.md",
+      "line": 115,
+      "column": 1,
+      "fingerprint": "cf30b4337e8f48ec444be7c96a73bf01d54eb860"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/speech-to-text/SKILL.md",
+      "line": 118,
+      "column": 1,
+      "fingerprint": "cf30b4337e8f48ec444be7c96a73bf01d54eb860"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/speech-to-text/SKILL.md",
+      "line": 121,
+      "column": 1,
+      "fingerprint": "cf30b4337e8f48ec444be7c96a73bf01d54eb860"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/speech-to-text/SKILL.md",
+      "line": 124,
+      "column": 1,
+      "fingerprint": "cf30b4337e8f48ec444be7c96a73bf01d54eb860"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/speech-to-text/SKILL.md",
+      "line": 127,
+      "column": 1,
+      "fingerprint": "cf30b4337e8f48ec444be7c96a73bf01d54eb860"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/speech-to-text/SKILL.md",
+      "line": 130,
+      "column": 1,
+      "fingerprint": "cf30b4337e8f48ec444be7c96a73bf01d54eb860"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/text-to-speech/SKILL.md",
+      "line": 170,
+      "column": 1,
+      "fingerprint": "ed1f8d3994e3b2b9393e2d3c855966e1f817ed2c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/text-to-speech/SKILL.md",
+      "line": 173,
+      "column": 1,
+      "fingerprint": "ed1f8d3994e3b2b9393e2d3c855966e1f817ed2c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/text-to-speech/SKILL.md",
+      "line": 176,
+      "column": 1,
+      "fingerprint": "ed1f8d3994e3b2b9393e2d3c855966e1f817ed2c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/text-to-speech/SKILL.md",
+      "line": 179,
+      "column": 1,
+      "fingerprint": "ed1f8d3994e3b2b9393e2d3c855966e1f817ed2c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/text-to-speech/SKILL.md",
+      "line": 182,
+      "column": 1,
+      "fingerprint": "ed1f8d3994e3b2b9393e2d3c855966e1f817ed2c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/text-to-speech/SKILL.md",
+      "line": 185,
+      "column": 1,
+      "fingerprint": "ed1f8d3994e3b2b9393e2d3c855966e1f817ed2c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/audio/text-to-speech/SKILL.md",
+      "line": 188,
+      "column": 1,
+      "fingerprint": "ed1f8d3994e3b2b9393e2d3c855966e1f817ed2c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/ai-image-generation/SKILL.md",
+      "line": 140,
+      "column": 1,
+      "fingerprint": "4858b5b22c03f135703f5805e64385336c91cca2"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/ai-image-generation/SKILL.md",
+      "line": 143,
+      "column": 1,
+      "fingerprint": "4858b5b22c03f135703f5805e64385336c91cca2"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/ai-image-generation/SKILL.md",
+      "line": 146,
+      "column": 1,
+      "fingerprint": "4858b5b22c03f135703f5805e64385336c91cca2"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/ai-image-generation/SKILL.md",
+      "line": 149,
+      "column": 1,
+      "fingerprint": "4858b5b22c03f135703f5805e64385336c91cca2"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/ai-image-generation/SKILL.md",
+      "line": 152,
+      "column": 1,
+      "fingerprint": "4858b5b22c03f135703f5805e64385336c91cca2"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/ai-image-generation/SKILL.md",
+      "line": 155,
+      "column": 1,
+      "fingerprint": "4858b5b22c03f135703f5805e64385336c91cca2"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/ai-image-generation/SKILL.md",
+      "line": 158,
+      "column": 1,
+      "fingerprint": "4858b5b22c03f135703f5805e64385336c91cca2"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/ai-image-generation/SKILL.md",
+      "line": 161,
+      "column": 1,
+      "fingerprint": "4858b5b22c03f135703f5805e64385336c91cca2"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/background-removal/SKILL.md",
+      "line": 75,
+      "column": 1,
+      "fingerprint": "2c3c7a006cc82642445a0471f3c683ce122e599e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/background-removal/SKILL.md",
+      "line": 78,
+      "column": 1,
+      "fingerprint": "2c3c7a006cc82642445a0471f3c683ce122e599e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/background-removal/SKILL.md",
+      "line": 81,
+      "column": 1,
+      "fingerprint": "2c3c7a006cc82642445a0471f3c683ce122e599e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/background-removal/SKILL.md",
+      "line": 84,
+      "column": 1,
+      "fingerprint": "2c3c7a006cc82642445a0471f3c683ce122e599e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/flux-image/SKILL.md",
+      "line": 84,
+      "column": 1,
+      "fingerprint": "90323bb41f727d448248e7bd27687882c5746fe1"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/flux-image/SKILL.md",
+      "line": 87,
+      "column": 1,
+      "fingerprint": "90323bb41f727d448248e7bd27687882c5746fe1"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/flux-image/SKILL.md",
+      "line": 90,
+      "column": 1,
+      "fingerprint": "90323bb41f727d448248e7bd27687882c5746fe1"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/flux-image/SKILL.md",
+      "line": 93,
+      "column": 1,
+      "fingerprint": "90323bb41f727d448248e7bd27687882c5746fe1"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/gpt-image/SKILL.md",
+      "line": 134,
+      "column": 1,
+      "fingerprint": "242817b0b435602cd45b8155e75b4e78b1239637"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/gpt-image/SKILL.md",
+      "line": 137,
+      "column": 1,
+      "fingerprint": "242817b0b435602cd45b8155e75b4e78b1239637"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/gpt-image/SKILL.md",
+      "line": 140,
+      "column": 1,
+      "fingerprint": "242817b0b435602cd45b8155e75b4e78b1239637"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/gpt-image/SKILL.md",
+      "line": 143,
+      "column": 1,
+      "fingerprint": "242817b0b435602cd45b8155e75b4e78b1239637"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/image-upscaling/SKILL.md",
+      "line": 62,
+      "column": 1,
+      "fingerprint": "f79ec777f80abf4ee2d077e5c947c198efb070e6"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/image-upscaling/SKILL.md",
+      "line": 65,
+      "column": 1,
+      "fingerprint": "f79ec777f80abf4ee2d077e5c947c198efb070e6"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/image-upscaling/SKILL.md",
+      "line": 68,
+      "column": 1,
+      "fingerprint": "f79ec777f80abf4ee2d077e5c947c198efb070e6"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/image-upscaling/SKILL.md",
+      "line": 71,
+      "column": 1,
+      "fingerprint": "f79ec777f80abf4ee2d077e5c947c198efb070e6"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/nano-banana-2/SKILL.md",
+      "line": 153,
+      "column": 1,
+      "fingerprint": "76ea53646d17ebd2c1ffc045d7ca818c0af827e3"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/nano-banana-2/SKILL.md",
+      "line": 156,
+      "column": 1,
+      "fingerprint": "76ea53646d17ebd2c1ffc045d7ca818c0af827e3"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/nano-banana-2/SKILL.md",
+      "line": 159,
+      "column": 1,
+      "fingerprint": "76ea53646d17ebd2c1ffc045d7ca818c0af827e3"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/nano-banana/SKILL.md",
+      "line": 131,
+      "column": 1,
+      "fingerprint": "1dfc17269ceaa5d3d5a597640b1226856e2cf165"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/nano-banana/SKILL.md",
+      "line": 134,
+      "column": 1,
+      "fingerprint": "1dfc17269ceaa5d3d5a597640b1226856e2cf165"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/nano-banana/SKILL.md",
+      "line": 137,
+      "column": 1,
+      "fingerprint": "1dfc17269ceaa5d3d5a597640b1226856e2cf165"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/p-image/SKILL.md",
+      "line": 121,
+      "column": 1,
+      "fingerprint": "7abfdb4e7d5adc901f89ef840702ae48aaa593ae"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/p-image/SKILL.md",
+      "line": 124,
+      "column": 1,
+      "fingerprint": "7abfdb4e7d5adc901f89ef840702ae48aaa593ae"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/p-image/SKILL.md",
+      "line": 127,
+      "column": 1,
+      "fingerprint": "7abfdb4e7d5adc901f89ef840702ae48aaa593ae"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/p-image/SKILL.md",
+      "line": 130,
+      "column": 1,
+      "fingerprint": "7abfdb4e7d5adc901f89ef840702ae48aaa593ae"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/qwen-image-2-pro/SKILL.md",
+      "line": 192,
+      "column": 1,
+      "fingerprint": "c1f8f8257c75fff63edf45f6342a0c28dfe8e7cb"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/qwen-image-2-pro/SKILL.md",
+      "line": 195,
+      "column": 1,
+      "fingerprint": "c1f8f8257c75fff63edf45f6342a0c28dfe8e7cb"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/qwen-image-2-pro/SKILL.md",
+      "line": 198,
+      "column": 1,
+      "fingerprint": "c1f8f8257c75fff63edf45f6342a0c28dfe8e7cb"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/qwen-image-2/SKILL.md",
+      "line": 170,
+      "column": 1,
+      "fingerprint": "42e8f9511e6ab3f5021a167a30b7b069a80ad3b9"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/qwen-image-2/SKILL.md",
+      "line": 173,
+      "column": 1,
+      "fingerprint": "42e8f9511e6ab3f5021a167a30b7b069a80ad3b9"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/image/qwen-image-2/SKILL.md",
+      "line": 176,
+      "column": 1,
+      "fingerprint": "42e8f9511e6ab3f5021a167a30b7b069a80ad3b9"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"cli.inference.sh\".",
+      "file": "tools/infsh-cli/SKILL.md",
+      "line": 18,
+      "column": 1,
+      "fingerprint": "e41a1756e6fce286da57cea8f64a26446fcb91fd"
+    },
+    {
+      "ruleId": "exec/curl-pipe-sh",
+      "level": "error",
+      "message": "Download piped directly into a shell interpreter.",
+      "file": "tools/infsh-cli/SKILL.md",
+      "line": 18,
+      "column": 1,
+      "fingerprint": "2e6dc19a25d6e3dc3db815ca4a75dab8e6f66694"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/infsh-cli/SKILL.md",
+      "line": 106,
+      "column": 1,
+      "fingerprint": "30be33b682e5e2597e0dc3ace874fd8965674117"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/infsh-cli/SKILL.md",
+      "line": 109,
+      "column": 1,
+      "fingerprint": "30be33b682e5e2597e0dc3ace874fd8965674117"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/infsh-cli/SKILL.md",
+      "line": 112,
+      "column": 1,
+      "fingerprint": "30be33b682e5e2597e0dc3ace874fd8965674117"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/infsh-cli/SKILL.md",
+      "line": 115,
+      "column": 1,
+      "fingerprint": "30be33b682e5e2597e0dc3ace874fd8965674117"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/infsh-cli/SKILL.md",
+      "line": 118,
+      "column": 1,
+      "fingerprint": "30be33b682e5e2597e0dc3ace874fd8965674117"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/infsh-cli/SKILL.md",
+      "line": 121,
+      "column": 1,
+      "fingerprint": "30be33b682e5e2597e0dc3ace874fd8965674117"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/infsh-cli/SKILL.md",
+      "line": 124,
+      "column": 1,
+      "fingerprint": "30be33b682e5e2597e0dc3ace874fd8965674117"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/infsh-cli/SKILL.md",
+      "line": 125,
+      "column": 1,
+      "fingerprint": "30be33b682e5e2597e0dc3ace874fd8965674117"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/infsh-cli/SKILL.md",
+      "line": 128,
+      "column": 1,
+      "fingerprint": "30be33b682e5e2597e0dc3ace874fd8965674117"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/infsh-cli/SKILL.md",
+      "line": 129,
+      "column": 1,
+      "fingerprint": "30be33b682e5e2597e0dc3ace874fd8965674117"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/llm/ai-rag-pipeline/SKILL.md",
+      "line": 296,
+      "column": 1,
+      "fingerprint": "db5b1b5d72214823f0dee05b45362f17439ef620"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/llm/ai-rag-pipeline/SKILL.md",
+      "line": 299,
+      "column": 1,
+      "fingerprint": "db5b1b5d72214823f0dee05b45362f17439ef620"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/llm/ai-rag-pipeline/SKILL.md",
+      "line": 302,
+      "column": 1,
+      "fingerprint": "db5b1b5d72214823f0dee05b45362f17439ef620"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/llm/ai-rag-pipeline/SKILL.md",
+      "line": 305,
+      "column": 1,
+      "fingerprint": "db5b1b5d72214823f0dee05b45362f17439ef620"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/llm/llm-models/SKILL.md",
+      "line": 116,
+      "column": 1,
+      "fingerprint": "5240d2f191d45190ba7de231392414e8b57a86ef"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/llm/llm-models/SKILL.md",
+      "line": 119,
+      "column": 1,
+      "fingerprint": "5240d2f191d45190ba7de231392414e8b57a86ef"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/llm/llm-models/SKILL.md",
+      "line": 122,
+      "column": 1,
+      "fingerprint": "5240d2f191d45190ba7de231392414e8b57a86ef"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/llm/llm-models/SKILL.md",
+      "line": 125,
+      "column": 1,
+      "fingerprint": "5240d2f191d45190ba7de231392414e8b57a86ef"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/llm/web-search/SKILL.md",
+      "line": 136,
+      "column": 1,
+      "fingerprint": "71719ebbd9abc67f664f48c60568f42c61ef1bf2"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/llm/web-search/SKILL.md",
+      "line": 139,
+      "column": 1,
+      "fingerprint": "71719ebbd9abc67f664f48c60568f42c61ef1bf2"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/llm/web-search/SKILL.md",
+      "line": 142,
+      "column": 1,
+      "fingerprint": "71719ebbd9abc67f664f48c60568f42c61ef1bf2"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/social/twitter-automation/SKILL.md",
+      "line": 138,
+      "column": 1,
+      "fingerprint": "462d6aa987ece06cf2f415aa3d59627bd61f13f7"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/social/twitter-automation/SKILL.md",
+      "line": 141,
+      "column": 1,
+      "fingerprint": "462d6aa987ece06cf2f415aa3d59627bd61f13f7"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/social/twitter-automation/SKILL.md",
+      "line": 144,
+      "column": 1,
+      "fingerprint": "462d6aa987ece06cf2f415aa3d59627bd61f13f7"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/social/twitter-automation/SKILL.md",
+      "line": 147,
+      "column": 1,
+      "fingerprint": "462d6aa987ece06cf2f415aa3d59627bd61f13f7"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/agent-browser/SKILL.md",
+      "line": 277,
+      "column": 1,
+      "fingerprint": "acc3401f146db03ea9eefda98726405a9576d86e"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/agent-browser/SKILL.md",
+      "line": 280,
+      "column": 1,
+      "fingerprint": "acc3401f146db03ea9eefda98726405a9576d86e"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"example.com\\\".",
+      "file": "tools/utilities/python-executor/SKILL.md",
+      "line": 84,
+      "column": 1,
+      "fingerprint": "2011c3acddf7e3a09d65997906310856d9026d9a"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"api.github.com\".",
+      "file": "tools/utilities/python-executor/SKILL.md",
+      "line": 125,
+      "column": 1,
+      "fingerprint": "9757d131d333213387b8279500401187f9827a9c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/python-executor/SKILL.md",
+      "line": 173,
+      "column": 1,
+      "fingerprint": "d1e065034c63ef2e97e89a75a62e6fea729b1d78"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/python-executor/SKILL.md",
+      "line": 176,
+      "column": 1,
+      "fingerprint": "d1e065034c63ef2e97e89a75a62e6fea729b1d78"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/python-executor/SKILL.md",
+      "line": 179,
+      "column": 1,
+      "fingerprint": "d1e065034c63ef2e97e89a75a62e6fea729b1d78"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 25,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 51,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 52,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 53,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 58,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 59,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 60,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 65,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 66,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 71,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 72,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 78,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 85,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 86,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 91,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 92,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 93,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 98,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 99,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/utilities/related-skill/SKILL.md",
+      "line": 100,
+      "column": 1,
+      "fingerprint": "cf94365eca518d9d60bea86e0c50ceb4138432af"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-avatar-video/SKILL.md",
+      "line": 243,
+      "column": 1,
+      "fingerprint": "255febd4ec5379cd5326ae1502e7bf213dffa3da"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-avatar-video/SKILL.md",
+      "line": 246,
+      "column": 1,
+      "fingerprint": "255febd4ec5379cd5326ae1502e7bf213dffa3da"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-avatar-video/SKILL.md",
+      "line": 249,
+      "column": 1,
+      "fingerprint": "255febd4ec5379cd5326ae1502e7bf213dffa3da"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-avatar-video/SKILL.md",
+      "line": 252,
+      "column": 1,
+      "fingerprint": "255febd4ec5379cd5326ae1502e7bf213dffa3da"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-avatar-video/SKILL.md",
+      "line": 255,
+      "column": 1,
+      "fingerprint": "255febd4ec5379cd5326ae1502e7bf213dffa3da"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-avatar-video/SKILL.md",
+      "line": 258,
+      "column": 1,
+      "fingerprint": "255febd4ec5379cd5326ae1502e7bf213dffa3da"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-video-generation/SKILL.md",
+      "line": 218,
+      "column": 1,
+      "fingerprint": "408f4342492b37fc614dd1ca1a5674e1304664f9"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-video-generation/SKILL.md",
+      "line": 221,
+      "column": 1,
+      "fingerprint": "408f4342492b37fc614dd1ca1a5674e1304664f9"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-video-generation/SKILL.md",
+      "line": 224,
+      "column": 1,
+      "fingerprint": "408f4342492b37fc614dd1ca1a5674e1304664f9"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-video-generation/SKILL.md",
+      "line": 227,
+      "column": 1,
+      "fingerprint": "408f4342492b37fc614dd1ca1a5674e1304664f9"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-video-generation/SKILL.md",
+      "line": 230,
+      "column": 1,
+      "fingerprint": "408f4342492b37fc614dd1ca1a5674e1304664f9"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-video-generation/SKILL.md",
+      "line": 233,
+      "column": 1,
+      "fingerprint": "408f4342492b37fc614dd1ca1a5674e1304664f9"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-video-generation/SKILL.md",
+      "line": 236,
+      "column": 1,
+      "fingerprint": "408f4342492b37fc614dd1ca1a5674e1304664f9"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-video-generation/SKILL.md",
+      "line": 239,
+      "column": 1,
+      "fingerprint": "408f4342492b37fc614dd1ca1a5674e1304664f9"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/ai-video-generation/SKILL.md",
+      "line": 242,
+      "column": 1,
+      "fingerprint": "408f4342492b37fc614dd1ca1a5674e1304664f9"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/google-veo/SKILL.md",
+      "line": 109,
+      "column": 1,
+      "fingerprint": "1a77ab3bfbad009dcea263633f18b225d1348b5a"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/google-veo/SKILL.md",
+      "line": 112,
+      "column": 1,
+      "fingerprint": "1a77ab3bfbad009dcea263633f18b225d1348b5a"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/google-veo/SKILL.md",
+      "line": 115,
+      "column": 1,
+      "fingerprint": "1a77ab3bfbad009dcea263633f18b225d1348b5a"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/google-veo/SKILL.md",
+      "line": 118,
+      "column": 1,
+      "fingerprint": "1a77ab3bfbad009dcea263633f18b225d1348b5a"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/happyhorse/SKILL.md",
+      "line": 177,
+      "column": 1,
+      "fingerprint": "3cb66e053880add1a0606b38bd47853785acabc4"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/happyhorse/SKILL.md",
+      "line": 180,
+      "column": 1,
+      "fingerprint": "3cb66e053880add1a0606b38bd47853785acabc4"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/happyhorse/SKILL.md",
+      "line": 183,
+      "column": 1,
+      "fingerprint": "3cb66e053880add1a0606b38bd47853785acabc4"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/happyhorse/SKILL.md",
+      "line": 186,
+      "column": 1,
+      "fingerprint": "3cb66e053880add1a0606b38bd47853785acabc4"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/happyhorse/SKILL.md",
+      "line": 189,
+      "column": 1,
+      "fingerprint": "3cb66e053880add1a0606b38bd47853785acabc4"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/image-to-video/SKILL.md",
+      "line": 237,
+      "column": 1,
+      "fingerprint": "d4d8ff4188e52b2f1a6c2d195695bc38db9d5bb3"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/image-to-video/SKILL.md",
+      "line": 238,
+      "column": 1,
+      "fingerprint": "d4d8ff4188e52b2f1a6c2d195695bc38db9d5bb3"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/image-to-video/SKILL.md",
+      "line": 239,
+      "column": 1,
+      "fingerprint": "d4d8ff4188e52b2f1a6c2d195695bc38db9d5bb3"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/image-to-video/SKILL.md",
+      "line": 240,
+      "column": 1,
+      "fingerprint": "d4d8ff4188e52b2f1a6c2d195695bc38db9d5bb3"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/image-to-video/SKILL.md",
+      "line": 241,
+      "column": 1,
+      "fingerprint": "d4d8ff4188e52b2f1a6c2d195695bc38db9d5bb3"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/p-video-avatar/SKILL.md",
+      "line": 205,
+      "column": 1,
+      "fingerprint": "13e27f064d0c53623f68163477ead98a321b9c4f"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/p-video-avatar/SKILL.md",
+      "line": 208,
+      "column": 1,
+      "fingerprint": "13e27f064d0c53623f68163477ead98a321b9c4f"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/p-video-avatar/SKILL.md",
+      "line": 211,
+      "column": 1,
+      "fingerprint": "13e27f064d0c53623f68163477ead98a321b9c4f"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/p-video-avatar/SKILL.md",
+      "line": 214,
+      "column": 1,
+      "fingerprint": "13e27f064d0c53623f68163477ead98a321b9c4f"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/p-video-avatar/SKILL.md",
+      "line": 217,
+      "column": 1,
+      "fingerprint": "13e27f064d0c53623f68163477ead98a321b9c4f"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/p-video/SKILL.md",
+      "line": 129,
+      "column": 1,
+      "fingerprint": "6b474566106c020b77884ab53c767fc215d5c5b4"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/p-video/SKILL.md",
+      "line": 132,
+      "column": 1,
+      "fingerprint": "6b474566106c020b77884ab53c767fc215d5c5b4"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/p-video/SKILL.md",
+      "line": 135,
+      "column": 1,
+      "fingerprint": "6b474566106c020b77884ab53c767fc215d5c5b4"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/p-video/SKILL.md",
+      "line": 138,
+      "column": 1,
+      "fingerprint": "6b474566106c020b77884ab53c767fc215d5c5b4"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/p-video/SKILL.md",
+      "line": 141,
+      "column": 1,
+      "fingerprint": "6b474566106c020b77884ab53c767fc215d5c5b4"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/remotion-render/SKILL.md",
+      "line": 192,
+      "column": 1,
+      "fingerprint": "499ca03a4e569f29fca26d86eb583f4a6363dce5"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/remotion-render/SKILL.md",
+      "line": 195,
+      "column": 1,
+      "fingerprint": "499ca03a4e569f29fca26d86eb583f4a6363dce5"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/remotion-render/SKILL.md",
+      "line": 198,
+      "column": 1,
+      "fingerprint": "499ca03a4e569f29fca26d86eb583f4a6363dce5"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/remotion-render/SKILL.md",
+      "line": 201,
+      "column": 1,
+      "fingerprint": "499ca03a4e569f29fca26d86eb583f4a6363dce5"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/remotion-render/SKILL.md",
+      "line": 204,
+      "column": 1,
+      "fingerprint": "499ca03a4e569f29fca26d86eb583f4a6363dce5"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/seedance/SKILL.md",
+      "line": 231,
+      "column": 1,
+      "fingerprint": "242a796ee56c8303b71101a2124674e79b9565bb"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/seedance/SKILL.md",
+      "line": 234,
+      "column": 1,
+      "fingerprint": "242a796ee56c8303b71101a2124674e79b9565bb"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/seedance/SKILL.md",
+      "line": 237,
+      "column": 1,
+      "fingerprint": "242a796ee56c8303b71101a2124674e79b9565bb"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/seedance/SKILL.md",
+      "line": 240,
+      "column": 1,
+      "fingerprint": "242a796ee56c8303b71101a2124674e79b9565bb"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "tools/video/seedance/SKILL.md",
+      "line": 243,
+      "column": 1,
+      "fingerprint": "242a796ee56c8303b71101a2124674e79b9565bb"
+    },
+    {
+      "ruleId": "fs/credential-read",
+      "level": "error",
+      "message": "Accesses a credential path or secret store.",
+      "file": "ui/agent-ui/SKILL.md",
+      "line": 37,
+      "column": 1,
+      "fingerprint": "983c0c4ea5e1f0361272504cc55462e47f22ecaa"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "ui/agent-ui/SKILL.md",
+      "line": 104,
+      "column": 1,
+      "fingerprint": "b76b0e3c055770868fb9b904f04c322305f5e08c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "ui/agent-ui/SKILL.md",
+      "line": 107,
+      "column": 1,
+      "fingerprint": "b76b0e3c055770868fb9b904f04c322305f5e08c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "ui/agent-ui/SKILL.md",
+      "line": 110,
+      "column": 1,
+      "fingerprint": "b76b0e3c055770868fb9b904f04c322305f5e08c"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "ui/chat-ui/SKILL.md",
+      "line": 126,
+      "column": 1,
+      "fingerprint": "9700c0515cc88c00cefb9cb51d6a72bdf71061fd"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "ui/chat-ui/SKILL.md",
+      "line": 129,
+      "column": 1,
+      "fingerprint": "9700c0515cc88c00cefb9cb51d6a72bdf71061fd"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "ui/chat-ui/SKILL.md",
+      "line": 132,
+      "column": 1,
+      "fingerprint": "9700c0515cc88c00cefb9cb51d6a72bdf71061fd"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "ui/tools-ui/SKILL.md",
+      "line": 157,
+      "column": 1,
+      "fingerprint": "bef8e96994b0d25e33ae110e308b192b792a514b"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "ui/tools-ui/SKILL.md",
+      "line": 160,
+      "column": 1,
+      "fingerprint": "bef8e96994b0d25e33ae110e308b192b792a514b"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "ui/tools-ui/SKILL.md",
+      "line": 163,
+      "column": 1,
+      "fingerprint": "bef8e96994b0d25e33ae110e308b192b792a514b"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "ui/widgets-ui/SKILL.md",
+      "line": 159,
+      "column": 1,
+      "fingerprint": "08a7fe6b6045de67ee258d49a5a17bb3435cb019"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "ui/widgets-ui/SKILL.md",
+      "line": 162,
+      "column": 1,
+      "fingerprint": "08a7fe6b6045de67ee258d49a5a17bb3435cb019"
+    },
+    {
+      "ruleId": "instr/self-modify",
+      "level": "error",
+      "message": "Modifies the skill installation itself (installs, updates, or removes skills).",
+      "file": "ui/widgets-ui/SKILL.md",
+      "line": 165,
+      "column": 1,
+      "fingerprint": "08a7fe6b6045de67ee258d49a5a17bb3435cb019"
+    }
+  ]
+}

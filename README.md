@@ -201,8 +201,23 @@ is exactly where the ecosystem currently has nothing.
 
 ## What it found on real corpora
 
-See [`examples/results/`](examples/results/) for captured runs. Highlights
-are summarized in the repo's release notes.
+Captured against six corpora (2026-11-01, skill-audit 1.0.0); full reports in
+[`examples/results/`](examples/results/):
+
+| Corpus | Errors | Warnings | Headline |
+|---|---|---|---|
+| `anthropics/skills` (official) | 0 | 4 | consent-bypass phrasing in example skills |
+| `obra/superpowers` | 4 | 3 | env-interpolated URLs in maintenance scripts |
+| `addyosmani/agent-skills` | 5 | 14 | credential-store reads, shell surfaces |
+| `magentosh/superpowers` (typosquat clone) | **366** | 7 | **357× `instr/self-modify`** — every generated skill embeds `npx skills add` |
+| `bankai-skills/superpowers` (typosquat clone) | **366** | 7 | identical copy of the same generated content |
+| 28 locally installed skills (`~/.claude/skills`) | 2 | 43 | a skill-manager running `npx skills add`, 30 shell surfaces |
+
+The typosquat row is the whole pitch: the real `obra/superpowers` audits at
+7 findings; its clones — installed millions of times via the public
+leaderboard — audit at **373 each**, and they self-install. Findings are
+questions, not verdicts; every rule page in
+[`docs/rules/`](docs/rules/) explains the question it asks.
 
 ## Limits
 

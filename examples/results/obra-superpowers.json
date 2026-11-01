@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "summary": {
+    "error": 4,
+    "warning": 3,
+    "note": 0,
+    "total": 7
+  },
+  "findings": [
+    {
+      "ruleId": "egress/env-interpolated-url",
+      "level": "error",
+      "message": "URL is assembled from environment-like value \"UPSTREAM_SHA\".",
+      "file": "scripts/sync-to-codex-plugin.sh",
+      "line": 435,
+      "column": 1,
+      "fingerprint": "61d66ff840097c86fc9c56e2ca16c53a7b50b4e2"
+    },
+    {
+      "ruleId": "egress/env-interpolated-url",
+      "level": "error",
+      "message": "URL is assembled from environment-like value \"UPSTREAM_SHA\".",
+      "file": "scripts/sync-to-codex-plugin.sh",
+      "line": 445,
+      "column": 1,
+      "fingerprint": "61d66ff840097c86fc9c56e2ca16c53a7b50b4e2"
+    },
+    {
+      "ruleId": "egress/env-interpolated-url",
+      "level": "error",
+      "message": "URL is assembled from environment-like value \"UPSTREAM_SHA\".",
+      "file": "scripts/sync-to-codex-plugin.sh",
+      "line": 453,
+      "column": 1,
+      "fingerprint": "61d66ff840097c86fc9c56e2ca16c53a7b50b4e2"
+    },
+    {
+      "ruleId": "egress/env-interpolated-url",
+      "level": "error",
+      "message": "URL is assembled from environment-like value \"FORK, PR_NUM\".",
+      "file": "scripts/sync-to-codex-plugin.sh",
+      "line": 468,
+      "column": 1,
+      "fingerprint": "fa11af5c3563f282e2d211ff6e9a24db18abd291"
+    },
+    {
+      "ruleId": "exec/shell-true",
+      "level": "warning",
+      "message": "child_process imported.",
+      "file": "skills/brainstorming/scripts/server.cjs",
+      "line": 537,
+      "column": 1,
+      "fingerprint": "86c2bd2bb089b8874ec05d3e8eb634014f1b84b4"
+    },
+    {
+      "ruleId": "instr/consent-bypass",
+      "level": "warning",
+      "message": "Instructs the agent to act without user confirmation.",
+      "file": "skills/using-git-worktrees/SKILL.md",
+      "line": 45,
+      "column": 1,
+      "fingerprint": "88ecb139e1c5f0bf5bb6b82fc895ae7d7356c9bc"
+    },
+    {
+      "ruleId": "instr/consent-bypass",
+      "level": "warning",
+      "message": "Instructs the agent to act without user confirmation.",
+      "file": "skills/using-git-worktrees/SKILL.md",
+      "line": 67,
+      "column": 1,
+      "fingerprint": "88ecb139e1c5f0bf5bb6b82fc895ae7d7356c9bc"
+    }
+  ]
+}

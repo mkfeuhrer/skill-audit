@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "summary": {
+    "error": 0,
+    "warning": 4,
+    "note": 0,
+    "total": 4
+  },
+  "findings": [
+    {
+      "ruleId": "instr/consent-bypass",
+      "level": "warning",
+      "message": "Instructs the agent to act without user confirmation.",
+      "file": "skills/claude-api/SKILL.md",
+      "line": 71,
+      "column": 1,
+      "fingerprint": "fc30537cd58194d86f53a8bad31d403e1cc70029"
+    },
+    {
+      "ruleId": "instr/consent-bypass",
+      "level": "warning",
+      "message": "Instructs the agent to act without user confirmation.",
+      "file": "skills/claude-api/SKILL.md",
+      "line": 237,
+      "column": 1,
+      "fingerprint": "fc30537cd58194d86f53a8bad31d403e1cc70029"
+    },
+    {
+      "ruleId": "instr/consent-bypass",
+      "level": "warning",
+      "message": "Instructs the agent to act without user confirmation.",
+      "file": "skills/claude-api/SKILL.md",
+      "line": 591,
+      "column": 1,
+      "fingerprint": "fc30537cd58194d86f53a8bad31d403e1cc70029"
+    },
+    {
+      "ruleId": "egress/undeclared-host",
+      "level": "warning",
+      "message": "Sends data to undeclared host \"fonts.googleapis.com\".",
+      "file": "skills/skill-creator/scripts/generate_report.py",
+      "line": 41,
+      "column": 1,
+      "fingerprint": "1df0728477f271acb854de35899e7eb05cf6171b"
+    }
+  ]
+}
