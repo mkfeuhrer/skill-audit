@@ -34,6 +34,6 @@ runs:
         node -e "const s=require('./skill-audit.sarif');const r=s.runs[0].results.length;console.log('skill-audit: '+r+' finding(s)');process.exit(0)"
     - name: Upload SARIF
       if: ${{ inputs.upload-sarif == 'true' }}
-      uses: github/codeql-action/upload-sarif@v3
+      uses: github/codeql-action/upload-sarif@v4
       with:
         sarif_file: skill-audit.sarif
