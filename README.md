@@ -47,6 +47,10 @@ $ echo $?
 1
 ```
 
+> **Publishing note:** the npm release is being finalized. Until the package
+> lands on the registry, run from a checkout:
+> `node bin/skill-audit.mjs ~/.claude/skills`.
+
 ## Governance: block and report
 
 <p align="center"><img src="docs/img/governance.svg" alt="skill-audit gating a skill install" width="760"></p>
